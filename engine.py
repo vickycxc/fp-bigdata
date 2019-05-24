@@ -22,7 +22,7 @@ class ClusteringEngine:
 
             logger.info("Assembling vector!")
             assembler = VectorAssembler(
-            inputCols=["annual_consume"],
+            inputCols=["_c12"],
             outputCol='features')
 
             data.append(assembler.transform(self.model[i]))
@@ -81,7 +81,7 @@ class ClusteringEngine:
             if filename.endswith(".csv"):
                 batch = os.path.join(dataset_path, filename)
                 logger.info("Loading {}".format(filename))
-                self.model.append( spark.read.csv(batch, header=True, inferSchema=True))
+                self.model.append( spark.read.csv(batch, header=False, inferSchema=True))
                 continue
             else:
                 continue

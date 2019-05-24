@@ -13,4 +13,4 @@ with open(dataset) as f:
     for x in content:
         producer.send('electric', value=x)
         print x
-        sleep(0.001)
+        sleep(0.002)
