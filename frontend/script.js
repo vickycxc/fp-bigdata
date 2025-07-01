@@ -207,6 +207,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // ==================================================================
   processButton.addEventListener("click", (e) => {
     e.preventDefault(); // Mencegah reload halaman
-    uploadAndDiagnose();
+    uploadAndDiagnose(e);
   });
 });

@@ -190,9 +190,10 @@ def predict_ecg():
     respons = {
         "diagnosis": nama_diagnosis_prediksi,
         "advice": advice_prediksi,
-        "confidence": round(probabilitas_tertinggi, 2)
+        "confidence": round(float(probabilitas_tertinggi), 2)
     }
     
+    print("🚀 ~ respons:", respons)
     return jsonify(respons)
 
 if __name__ == '__main__':
