@@ -94,8 +94,20 @@
             <span id="xyz-file-status" class="file-status-info">Tidak ada file dipilih</span>
           </div>
 
+          <div class="input-group">
+            <label for="ecg-file-hea" class="file-label">File Konfigurasi (.hea):</label>
+            <label for="ecg-file-hea" class="btn-modern">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 24 24">
+                <path d="M13 10H18L12 4L6 10H11V16H13V10ZM4 18H20V20H4V18Z" />
+              </svg>
+              <span>Pilih File .hea</span>
+            </label>
+            <span id="hea-file-status" class="file-status-info">Tidak ada file dipilih</span>
+          </div>
+
           <input type="file" id="ecg-file-dat" accept=".dat" style="display: none" />
           <input type="file" id="ecg-file-xyz" accept=".xyz" style="display: none" />
+          <input type="file" id="ecg-file-hea" accept=".xyz" style="display: none" />
 
           <button id="process-btn" class="btn-modern process-button">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 24 24">
