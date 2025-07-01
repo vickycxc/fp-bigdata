@@ -3,7 +3,7 @@ Flask-Cors
 pandas
 numpy
 joblib
-scikit-learn==1.0.2
+scikit-learn
 imbalanced-learn
 neurokit2
 wfdb

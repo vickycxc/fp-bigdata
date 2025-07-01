@@ -15,18 +15,16 @@ import logging
 # Inisialisasi Aplikasi Flask & Konfigurasi Awal
 # ==============================================================================
 app = Flask(__name__)
-CORS(app) # Mengizinkan akses dari berbagai sumber (misal: frontend React/Vue)
+CORS(app) 
 
 # Konfigurasi Logging
 logging.basicConfig(level=logging.INFO)
 
-# Konfigurasi Path (Gunakan path relatif agar portabel)
+# Konfigurasi Path
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 UPLOAD_FOLDER = os.path.join(BASE_DIR, 'uploads')
 ASSETS_FOLDER = os.path.join(BASE_DIR, '../train-model')
 MODEL_PATH = os.path.join(ASSETS_FOLDER, 'model_ekg_randomforest.joblib')
-
-# --- PERUBAHAN DI SINI ---
 DATA_PATH = os.path.join(ASSETS_FOLDER, 'dataset_final_untuk_ml_final.csv')
 
 # Pastikan folder upload ada
@@ -42,29 +40,66 @@ except Exception as e:
     model_terlatih = None
     df_training = None
 
+possible_diagnosis = {
+    "0": {
+        "name": "Angina/Other Symptoms",
+        "advice": "Terdeteksi gejala yang mirip dengan Angina (nyeri dada) atau keluhan jantung lainnya. Ini bisa menjadi tanda peringatan dari kondisi jantung yang mendasarinya. Segera konsultasikan dengan dokter untuk diagnosis yang akurat."
+    },
+    "1": {
+        "name": "Bundle Branch Block",
+        "advice": "Terdeteksi adanya kelainan atau blok pada jalur kelistrikan jantung. Kondisi ini memerlukan evaluasi medis lebih lanjut untuk mengetahui penyebab dan tingkat keparahannya."
+    },
+    "2": {
+        "name": "Cardiomyopathy",
+        "advice": "Terdapat indikasi adanya penyakit pada otot jantung (bisa berupa penebalan atau pelemahan). Disarankan untuk melakukan pemeriksaan lanjutan seperti ekokardiogram (USG jantung) dengan kardiolog."
+    },
+    "3": {
+        "name": "Dysrhythmia",
+        "advice": "Terdeteksi irama jantung yang tidak normal atau tidak teratur (Aritmia). Sebaiknya segera konsultasi dengan dokter spesialis jantung (kardiolog) untuk pemeriksaan lebih mendalam."
+    },
+    "4": {
+        "name": "Healthy Control",
+        "advice": "Tidak terdeteksi kelainan signifikan pada sinyal EKG Anda saat ini. Pertahankan pola hidup sehat dengan diet seimbang dan olahraga teratur."
+    },
+    "5": {
+        "name": "Heart Failure",
+        "advice": "Terdeteksi indikasi Gagal Jantung, yaitu kondisi di mana jantung tidak memompa darah secara efisien. Sangat penting untuk segera menemui dokter untuk penanganan dan manajemen kondisi ini."
+    },
+    "6": {
+        "name": "Myocardial Hypertrophy",
+        "advice": "Ditemukan adanya indikasi penebalan pada otot jantung (Hipertrofi). Kondisi ini seringkali terkait dengan tekanan darah tinggi dan memerlukan evaluasi oleh kardiolog."
+    },
+    "7": {
+        "name": "Myocardial Infarction",
+        "advice": "Terdeteksi indikasi kuat Serangan Jantung (Infark Miokard). Ini adalah kondisi darurat medis. SEGERA HUBUNGI AMBULANS atau cari pertolongan medis darurat terdekat."
+    },
+    "8": {
+        "name": "Myocarditis",
+        "advice": "Terdapat tanda-tanda peradangan pada otot jantung (Miokarditis). Kondisi ini serius dan memerlukan diagnosis serta penanganan medis secepatnya untuk mencegah komplikasi."
+    },
+    "9": {
+        "name": "Valvular Heart Disease",
+        "advice": "Terindikasi adanya kelainan pada katup jantung. Disarankan untuk berkonsultasi dengan dokter untuk pemeriksaan lebih lanjut, seperti ekokardiogram, guna memastikan fungsi katup."
+    }
+}
+
 # ==============================================================================
 # Fungsi-Fungsi Pembantu (Helper Functions)
 # ==============================================================================
-
 def filter_signal(signal_data, fs):
-    """Fungsi untuk menerapkan filter band-pass ke sinyal."""
     lowcut, highcut = 0.5, 45.0
     nyquist = 0.5 * fs
     b, a = signal.butter(2, [lowcut / nyquist, highcut / nyquist], btype='band')
     return signal.filtfilt(b, a, signal_data, axis=0)
 
 def extract_ecg_features(record_path):
-    """Mengekstrak fitur sinyal EKG dari file yang diberikan."""
     try:
-        # wfdb.rdrecord akan membaca .hea dan .dat/.xyz secara otomatis
         ecg_record = wfdb.rdrecord(record_path)
-        raw_signal = ecg_record.p_signal[:, :12] # Ambil 12 lead utama
+        raw_signal = ecg_record.p_signal[:, :12]
         fs = ecg_record.fs
-
         filtered_signal = filter_signal(raw_signal, fs)
-        signals, info = nk.ecg_process(filtered_signal[:, 1], sampling_rate=fs) # Menggunakan lead II
+        signals, info = nk.ecg_process(filtered_signal[:, 1], sampling_rate=fs)
         hrv_features = nk.hrv(info, sampling_rate=fs)
-
         fitur = {
             'Rata_Rata_HR': signals['ECG_Rate'].mean(),
             'HRV_SDNN': hrv_features.get('HRV_SDNN', pd.Series([np.nan])).iloc[0],
@@ -80,88 +115,81 @@ def extract_ecg_features(record_path):
 # ==============================================================================
 @app.route('/predict', methods=['POST'])
 def predict_ecg():
-    """Endpoint untuk menerima file EKG dan data pasien, lalu mengembalikan prediksi."""
     if model_terlatih is None or df_training is None:
         return jsonify({"error": "Server-side error: Model atau data referensi tidak berhasil dimuat."}), 500
 
-    # --- 1. Menerima dan Menyimpan File ---
     if 'hea_file' not in request.files or 'dat_file' not in request.files:
         return jsonify({"error": "Input error: File .hea atau .dat tidak ditemukan."}), 400
     
     hea_file = request.files['hea_file']
     dat_file = request.files['dat_file']
-    xyz_file = request.files.get('xyz_file') # Opsional
-
     record_name = os.path.splitext(hea_file.filename)[0]
     
-    # Simpan file-file tersebut sementara ke folder 'uploads'
     temp_upload_dir = os.path.join(UPLOAD_FOLDER, record_name)
     os.makedirs(temp_upload_dir, exist_ok=True)
     
-    hea_path = os.path.join(temp_upload_dir, hea_file.filename)
-    dat_path = os.path.join(temp_upload_dir, dat_file.filename)
-    hea_file.save(hea_path)
-    dat_file.save(dat_path)
-    if xyz_file:
-        xyz_file.save(os.path.join(temp_upload_dir, xyz_file.filename))
+    hea_file.save(os.path.join(temp_upload_dir, hea_file.filename))
+    dat_file.save(os.path.join(temp_upload_dir, dat_file.filename))
+    if 'xyz_file' in request.files:
+        request.files['xyz_file'].save(os.path.join(temp_upload_dir, request.files['xyz_file'].filename))
     
     record_path_for_wfdb = os.path.join(temp_upload_dir, record_name)
 
-    # --- 2. Menerima Data Pasien ---
     try:
         age = int(request.form['age'])
-        sex = int(request.form['sex']) # Asumsi 0: female, 1: male
-        smoker = request.form['smoker'] # Asumsi 'yes' atau 'no'
+        sex = int(request.form['sex'])
+        smoker = request.form['smoker']
     except (KeyError, ValueError) as e:
         return jsonify({"error": f"Input error: Data form tidak valid atau hilang: {e}"}), 400
 
-    # --- 3. Ekstraksi Fitur Sinyal ---
     signal_features = extract_ecg_features(record_path_for_wfdb)
     if signal_features is None:
-        shutil.rmtree(temp_upload_dir) # Bersihkan file
+        shutil.rmtree(temp_upload_dir)
         return jsonify({"error": "Processing error: Gagal mengekstrak fitur dari sinyal EKG."}), 500
 
-    # --- 4. Membuat DataFrame untuk Data Baru ---
     new_data = {
         'Age': age, 'Sex': sex, 'Smoker': smoker,
-        'Rata_Rata_HR': signal_features['Rata_Rata_HR'],
-        'HRV_SDNN': signal_features['HRV_SDNN'],
-        'HRV_RMSSD': signal_features['HRV_RMSSD'],
+        'Rata_Rata_HR': float(signal_features['Rata_Rata_HR']),
+        'HRV_SDNN': float(signal_features['HRV_SDNN']),
+        'HRV_RMSSD': float(signal_features['HRV_RMSSD']),
         'Acute_Infarction_Localization': 'no', 
         'Additional_Diagnoses': 'no'
     }
+    print("new data: ", new_data)
     df_new = pd.DataFrame([new_data])
-
-    # --- 5. Proses Ulang Data Baru agar Sesuai Format Training ---
-    df_train_features = df_training.drop(columns=['Record', 'Diagnosis'])
-    df_combined = pd.concat([df_train_features, df_new], ignore_index=True)
+    
+    df_train_features_only = df_training.drop(columns=['Record', 'Diagnosis'])
+    df_combined = pd.concat([df_train_features_only, df_new], ignore_index=True)
     
     kolom_untuk_encode = df_combined.select_dtypes(include=['object']).columns.tolist()
     df_encoded = pd.get_dummies(df_combined, columns=kolom_untuk_encode, dummy_na=False)
     
     new_data_encoded = df_encoded.tail(1)
-
-    X_train_columns = model_terlatih.feature_names_in_
-    new_data_aligned = pd.DataFrame(columns=X_train_columns)
-    new_data_aligned = pd.concat([new_data_aligned, new_data_encoded]).fillna(0)
     
-    df_predict = new_data_aligned[X_train_columns]
+    X_training_full = df_encoded.head(len(df_training))
+    imputer = SimpleImputer(strategy='median')
+    imputer.fit(X_training_full)
 
-    # --- 6. Lakukan Prediksi ---
+    new_data_imputed = imputer.transform(new_data_encoded)
+    
+    # --- PERBAIKAN DI SINI ---
+    # Ambil nama dan urutan kolom dari X_training_full, BUKAN dari model
+    X_train_columns = X_training_full.columns.tolist()
+    
+    df_predict = pd.DataFrame(new_data_imputed, columns=X_train_columns)
+    
     prediksi_id = model_terlatih.predict(df_predict)
     prediksi_probabilitas = model_terlatih.predict_proba(df_predict)
 
-    # --- 7. Format dan Kirim Respons ---
-    df_training['Diagnosis_ID'] = df_training['Diagnosis'].astype('category').cat.codes
-    diagnosis_mapping = dict(enumerate(df_training['Diagnosis'].astype('category').cat.categories))
-    
-    nama_diagnosis_prediksi = diagnosis_mapping.get(prediksi_id[0], "ID Tidak Dikenal")
+    nama_diagnosis_prediksi = possible_diagnosis[str(prediksi_id[0])]['name']
+    advice_prediksi = possible_diagnosis[str(prediksi_id[0])]['advice']
     probabilitas_tertinggi = np.max(prediksi_probabilitas) * 100
 
-    shutil.rmtree(temp_upload_dir) # Bersihkan file setelah selesai
+    shutil.rmtree(temp_upload_dir)
 
     respons = {
         "diagnosis": nama_diagnosis_prediksi,
+        "advice": advice_prediksi,
         "confidence": round(probabilitas_tertinggi, 2)
     }
     
