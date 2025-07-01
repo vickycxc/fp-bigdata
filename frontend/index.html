@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cardiologix - Diagnosa EKG Jantung</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- ======================================= -->
+    <!--        KOLOM KIRI (INFORMASI)           -->
+    <!-- ======================================= -->
+    <div class="hero-section">
+      <!-- ✅ Logo di pojok kiri atas -->
+      <div class="top-logo">
+        <img src="logo_cardiologix.png" alt="Cardiologix Logo" />
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Diagnosa Jantung dari Sinyal EKG
+        </h1>
+        <p class="hero-subtitle">
+          Memanfaatkan teknologi cerdas untuk menganalisa sinyal EKG, membantu
+          mendeteksi potensi kelainan jantung secara dini.
+        </p>
+      </div>
+    </div>
+
+    <!-- ======================================= -->
+    <!--        KOLOM KANAN (APLIKASI)           -->
+    <!-- ======================================= -->
+    <div class="app-section">
+      <div class="container">
+        <h2>Mulai Analisa</h2>
+        <p style="text-align: center; margin-top: -20px; margin-bottom: 30px">
+          Isi data pasien dan unggah file EKG untuk mendapatkan diagnosa.
+        </p>
+
+        <!-- Informasi Pasien -->
+        <div class="patient-info-section">
+          <div class="info-inputs-wrapper">
+            <div class="input-group">
+              <label for="patient-age" class="file-label">Usia (Tahun)</label>
+              <input type="number" id="patient-age" class="info-input" placeholder="Contoh: 35" />
+            </div>
+            <div class="input-group">
+              <label class="file-label">Jenis Kelamin</label>
+              <div class="radio-group">
+                <input type="radio" id="gender-male" name="gender" value="male" checked />
+                <label for="gender-male">Laki-laki</label>
+
+                <input type="radio" id="gender-female" name="gender" value="female" />
+                <label for="gender-female">Perempuan</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Upload File -->
+        <div class="upload-section">
+          <div class="input-group">
+            <label for="ecg-file-dat" class="file-label">Unggah File Sinyal EKG (.dat):</label>
+            <label for="ecg-file-dat" class="btn-modern">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 24 24">
+                <path d="M13 10H18L12 4L6 10H11V16H13V10ZM4 18H20V20H4V18Z" />
+              </svg>
+              <span>Pilih File .dat</span>
+            </label>
+            <span id="dat-file-status" class="file-status-info">Tidak ada file dipilih</span>
+          </div>
+
+          <div class="input-group">
+            <label for="ecg-file-xyz" class="file-label">File Konfigurasi (.xyz):</label>
+            <label for="ecg-file-xyz" class="btn-modern">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 24 24">
+                <path d="M13 10H18L12 4L6 10H11V16H13V10ZM4 18H20V20H4V18Z" />
+              </svg>
+              <span>Pilih File .xyz</span>
+            </label>
+            <span id="xyz-file-status" class="file-status-info">Tidak ada file dipilih</span>
+          </div>
+
+          <input type="file" id="ecg-file-dat" accept=".dat" style="display: none" />
+          <input type="file" id="ecg-file-xyz" accept=".xyz" style="display: none" />
+
+          <button id="process-btn" class="btn-modern process-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 24 24">
+              <path d="M8 5V19L19 12L8 5Z" />
+            </svg>
+            <span>Proses & Diagnosa</span>
+          </button>
+        </div>
+
+        <!-- Hasil Diagnosa -->
+        <div class="result-section">
+          <h3>Hasil Diagnosa</h3>
+          <div id="diagnosis-result" class="diagnosis-box">
+            Menunggu file untuk diproses...
+          </div>
+          <p id="status-pesan" class="status-message"></p>
+        </div>
+
+        <!-- Grafik -->
+        <div class="chart-section">
+          <h3>Visualisasi Sinyal EKG</h3>
+          <div class="chart-container">
+            <canvas id="ecgChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Cardiologix. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

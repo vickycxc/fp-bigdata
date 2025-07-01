@@ -1,0 +1,548 @@
+Record,Diagnosis,Age,Sex,Smoker,Acute_Infarction_Localization,Additional_Diagnoses,Rata_Rata_HR,HRV_SDNN,HRV_RMSSD
+s0010_re,Myocardial infarction,81.0,0.0,no,infero-latera,Diabetes mellitus,81.7734199695028,9.337212079189628,10.794443014810907
+s0014lre,Myocardial infarction,81.0,0.0,no,infero-latera,Diabetes mellitus,55.82644999560643,680.1748311778449,962.4277024661264
+s0016lre,Myocardial infarction,81.0,0.0,no,infero-latera,Diabetes mellitus,57.04558711679114,640.4679710170217,974.0675358292336
+s0015lre,Myocardial infarction,58.0,0.0,yes,anterior,"Arterial hypertension, Adiposis hepatis, Gastritis",78.86222782156554,21.10377999793739,8.917970696424264
+s0017lre,Myocardial infarction,63.0,1.0,yes,infero-postero-lateral,no,72.28914786777415,22.789742651375636,6.443190660096358
+s0020are,Myocardial infarction,69.0,1.0,no,antero-septal,"Arterial hypertension, Obesity",82.53558947357908,6.086855689399096,4.852966314665912
+s0020bre,Myocardial infarction,69.0,1.0,no,antero-septal,"Arterial hypertension, Obesity",80.99176260297902,10.164465398916397,6.79003498985084
+s0021are,Myocardial infarction,74.0,1.0,no,anterior,Skoliosis,96.16905023410696,28.5601677202318,32.76615447563048
+s0021bre,Myocardial infarction,74.0,1.0,no,anterior,Skoliosis,95.4233391705576,37.890393929304345,53.0078086490828
+s0025lre,Myocardial infarction,74.0,1.0,no,anterior,Skoliosis,103.27575182538114,18.87513699668245,27.4416821344346
+s0031lre,Myocardial infarction,74.0,1.0,no,anterior,Skoliosis,91.90756491041785,51.88219516626823,87.96734811997072
+s0101lre,Myocardial infarction,74.0,1.0,no,anterior,Skoliosis,64.95228244711456,46.64002590615406,17.209890408391697
+s0022lre,Myocardial infarction,62.0,0.0,yes,anterior,Struma (euthyroid),91.93500944224438,22.42908474201593,10.765259151441787
+s0027lre,Myocardial infarction,62.0,0.0,yes,anterior,Struma (euthyroid),80.78339130795277,15.321022282881366,7.157883354571172
+s0064lre,Myocardial infarction,62.0,0.0,yes,anterior,Struma (euthyroid),77.79954127844336,39.84306119825756,45.94983955469313
+s0026lre,Myocardial infarction,70.0,1.0,no,anterior,Hyperlipoproteinemia,74.17264466136886,24.145455877114387,14.736010314871526
+s0029lre,Myocardial infarction,70.0,1.0,no,anterior,Hyperlipoproteinemia,71.24244214399,30.59703501462216,13.29459546796052
+s0038lre,Myocardial infarction,70.0,1.0,no,anterior,Hyperlipoproteinemia,68.45116907383182,42.81777964847132,28.009826625613005
+s0078lre,Myocardial infarction,70.0,1.0,no,anterior,Hyperlipoproteinemia,53.13705068007841,55.804560655012686,20.024984394500795
+s0028lre,Myocardial infarction,60.0,1.0,yes,inferior,Hypercholesterinemia,59.39433806438335,77.23509548294722,116.31461683765326
+s0037lre,Myocardial infarction,60.0,1.0,yes,inferior,Hypercholesterinemia,64.13044732722787,33.02585275625354,21.616109695019293
+s0068lre,Myocardial infarction,60.0,1.0,yes,inferior,Hypercholesterinemia,59.90079612824792,111.07745714347912,169.6929211841201
+s0035_re,Myocardial infarction,66.0,1.0,yes,infero-lateral,"Nephrotic syndrome, Rheumatoid arthritis",85.64096854708897,10.429061688165444,4.332140563331841
+s0036lre,Myocardial infarction,46.0,1.0,no,anterior,"Rheumatoid arthritis,Hyperlipoproteinemia Type IV",89.26921011804401,12.746598544387934,3.506545021551225
+s0042lre,Myocardial infarction,46.0,1.0,no,anterior,"Rheumatoid arthritis,Hyperlipoproteinemia Type IV",78.87371707394165,8.863117656114566,4.954152214160747
+s0061lre,Myocardial infarction,46.0,1.0,no,anterior,"Rheumatoid arthritis,Hyperlipoproteinemia Type IV",86.50423718706128,10.067334280344282,3.2712718493263626
+s0039lre,Myocardial infarction,62.0,0.0,no,inferior,Arterial hypertension,90.43308182245696,13.840664257724036,6.260340283492286
+s0044lre,Myocardial infarction,62.0,0.0,no,inferior,Arterial hypertension,78.91511058446461,67.79460770345885,125.38947432009702
+s0049lre,Myocardial infarction,62.0,0.0,no,inferior,Arterial hypertension,88.40513957971925,14.026888462626744,6.954514322443936
+s0067lre,Myocardial infarction,62.0,0.0,no,inferior,Arterial hypertension,66.41583644466063,26.589974388252323,25.166114784235837
+s0043lre,Myocardial infarction,67.0,1.0,yes,inferior,Renal insufficiency,52.32635116463762,35.970912772079686,15.843298299599772
+s0050lre,Myocardial infarction,67.0,1.0,yes,inferior,Renal insufficiency,63.41632681033073,16.220944720300594,8.305106255549436
+s0045lre,Myocardial infarction,71.0,0.0,yes,antero-septal,"Diabetes mellitus, Renal insufficiency",85.3289265737504,5.239445701556819,4.982066604765636
+s0051lre,Myocardial infarction,71.0,0.0,yes,antero-septal,"Diabetes mellitus, Renal insufficiency",83.01068221710518,10.76072091307343,2.729877158291753
+s0072lre,Myocardial infarction,71.0,0.0,yes,antero-septal,"Diabetes mellitus, Renal insufficiency",88.66139175589733,8.039714573632075,4.326001122779063
+s0046lre,Myocardial infarction,75.0,1.0,no,anterior,Arterial hypertension,84.74898557153331,12.48948936988606,11.54068888758379
+s0056lre,Myocardial infarction,75.0,1.0,no,anterior,Arterial hypertension,75.55465744269306,26.03112117484127,29.74671633755788
+s0071lre,Myocardial infarction,75.0,1.0,no,anterior,Arterial hypertension,80.03376034895396,14.952153940644816,9.723141142872016
+s0047lre,Myocardial infarction,68.0,0.0,no,infero-lateral,"Arterial hypertension, Hypercholesterinemia",114.8808236379154,4.026040035347193,2.3926492936077857
+s0057lre,Myocardial infarction,68.0,0.0,no,infero-lateral,"Arterial hypertension, Hypercholesterinemia",82.72197707003639,9.231157784843075,3.549106062962031
+s0152lre,Myocardial infarction,68.0,0.0,no,infero-lateral,"Arterial hypertension, Hypercholesterinemia",66.87412404301729,26.16627200760844,14.482337354104663
+s0052lre,Myocardial infarction,63.0,1.0,no,infero-lateral,"Diabetes mellitus, Hyperuricemia",59.08265798597831,21.669491079149594,11.891779278746071
+s0060lre,Myocardial infarction,63.0,1.0,no,infero-lateral,"Diabetes mellitus, Hyperuricemia",73.00154722265044,26.47356263654972,14.36642476693285
+s0076lre,Myocardial infarction,63.0,1.0,no,infero-lateral,"Diabetes mellitus, Hyperuricemia",56.82667885954224,16.410310375016117,11.956697571755754
+s0053lre,Myocardial infarction,60.0,1.0,no,infero-lateral,Arterial hypertension,94.21430064230252,104.59320952239028,174.6020010110484
+s0055lre,Myocardial infarction,60.0,1.0,no,infero-lateral,Arterial hypertension,60.32897588824838,89.7169785039825,141.75070778622143
+s0063lre,Myocardial infarction,60.0,1.0,no,infero-lateral,Arterial hypertension,88.68099603412969,152.59599202985544,170.65306052300457
+s0075lre,Myocardial infarction,60.0,1.0,no,infero-lateral,Arterial hypertension,63.208924235126176,74.79462777858993,116.57968746489144
+s0054lre,Myocardial infarction,52.0,1.0,no,infero-poster-lateral,"Arterial hypertension, Obesity, Hyperlipoproteinemia Type IIa",87.98738947931695,118.97562806688532,187.7847593753512
+s0059lre,Myocardial infarction,52.0,1.0,no,infero-poster-lateral,"Arterial hypertension, Obesity, Hyperlipoproteinemia Type IIa",78.17900462195229,27.49510947065301,17.555895290740928
+s0082lre,Myocardial infarction,52.0,1.0,no,infero-poster-lateral,"Arterial hypertension, Obesity, Hyperlipoproteinemia Type IIa",69.7158767294586,19.622959721469023,10.291551415328554
+s0058lre,Myocardial infarction,57.0,1.0,yes,infero-lateral,"Arterial hypertension, Hyperlipoproteinemia Typ IIa, Obesity",87.78407293680719,18.741702827147837,6.324555320336759
+s0070lre,Myocardial infarction,57.0,1.0,yes,infero-lateral,"Arterial hypertension, Hyperlipoproteinemia Typ IIa, Obesity",85.91768805964531,25.976636710233095,10.00987167071574
+s0077lre,Myocardial infarction,57.0,1.0,yes,infero-lateral,"Arterial hypertension, Hyperlipoproteinemia Typ IIa, Obesity",73.576894430261,51.54843609782504,38.03396815759499
+s0062lre,Myocardial infarction,54.0,0.0,no,anterior,"Arterial hypertension, Hyperlipoproteinemia, Obesity, Colon cancer",64.76787756127626,37.25119424587936,27.242385009092107
+s0069lre,Myocardial infarction,54.0,0.0,no,anterior,"Arterial hypertension, Hyperlipoproteinemia, Obesity, Colon cancer",51.13509717319156,53.204032076616365,47.2784306000104
+s0079lre,Myocardial infarction,54.0,0.0,no,anterior,"Arterial hypertension, Hyperlipoproteinemia, Obesity, Colon cancer",70.41569189149527,71.29958047693363,95.07424878459408
+s0065lre,Myocardial infarction,67.0,1.0,yes,inferior,"Megaloblastic anemia, Vit. B12 deficiency, ACVB (1x)",74.67146258956296,88.61505037514145,166.55601803254407
+s0073lre,Myocardial infarction,67.0,1.0,yes,inferior,"Megaloblastic anemia, Vit. B12 deficiency, ACVB (1x)",93.00401470029531,32.82840868899793,52.0356084374397
+s0097lre,Myocardial infarction,67.0,1.0,yes,inferior,"Megaloblastic anemia, Vit. B12 deficiency, ACVB (1x)",92.60859595054008,60.517807833191256,28.3297924958363
+s0066lre,Myocardial infarction,43.0,1.0,yes,infero-lateral,no,65.4650249284578,25.87820605040266,23.706539182259394
+s0074lre,Myocardial infarction,43.0,1.0,yes,infero-lateral,no,64.86479610707802,34.690013674403005,31.27213194777644
+s0149lre,Myocardial infarction,43.0,1.0,yes,infero-lateral,no,68.00838424695075,68.41464544408828,107.48902560261674
+s0080lre,Myocardial infarction,69.0,1.0,no,inferior,"Hypercholesterinemia, peripheral atherosclerosis",67.92116275830938,146.52157049417244,202.5432587215465
+s0081lre,Myocardial infarction,69.0,1.0,no,inferior,"Hypercholesterinemia, peripheral atherosclerosis",79.27303441333004,391.31944750932206,569.2550874695185
+s0085lre,Myocardial infarction,69.0,1.0,no,inferior,"Hypercholesterinemia, peripheral atherosclerosis",59.62114845774904,319.44027664444434,525.8603186839212
+s0103lre,Myocardial infarction,69.0,1.0,no,inferior,"Hypercholesterinemia, peripheral atherosclerosis",56.979511454967536,266.88393501836987,428.1681467656858
+s0083lre,Myocardial infarction,52.0,1.0,no,antero-septal,"Gastritis, Rheumatoid arthritis",63.79892698385267,26.79044533845055,22.74844317017467
+s0084lre,Myocardial infarction,52.0,1.0,no,antero-septal,"Gastritis, Rheumatoid arthritis",63.43255012223453,10.76095949716938,7.247717693502271
+s0086lre,Myocardial infarction,52.0,1.0,no,antero-septal,"Gastritis, Rheumatoid arthritis",65.18216851818585,21.82498844535584,9.728426204826976
+s0094lre,Myocardial infarction,52.0,1.0,no,antero-septal,"Gastritis, Rheumatoid arthritis",78.05449162793612,15.511295696095884,5.38453315329301
+s0087lre,Myocardial infarction,76.0,1.0,no,antero-septal,"Diabetes mellitus, Arterial hypertension",74.39848099602683,155.56610840115542,213.92436914546624
+s0091lre,Myocardial infarction,76.0,1.0,no,antero-septal,"Diabetes mellitus, Arterial hypertension",63.40347548721534,291.11294642031766,420.6743771896877
+s0150lre,Myocardial infarction,76.0,1.0,no,antero-septal,"Diabetes mellitus, Arterial hypertension",71.57252029228593,222.7308229013613,277.8416815382458
+s0088lre,Myocardial infarction,74.0,0.0,no,inferior,Diabetes mellitus,75.26335349974558,107.12203510392462,185.16817631852064
+s0095lre,Myocardial infarction,74.0,0.0,no,inferior,Diabetes mellitus,78.2020371389555,28.789896725335243,34.194001370558105
+s0089lre,Myocardial infarction,53.0,1.0,no,antero-lateral,Hypercholesterinemia,102.4760033053682,69.09284451663133,109.81628558784384
+s0096lre,Myocardial infarction,53.0,1.0,no,antero-lateral,Hypercholesterinemia,115.11458181751412,81.02433818124963,120.69695368827512
+s0151lre,Myocardial infarction,53.0,1.0,no,antero-lateral,Hypercholesterinemia,85.5870508173112,19.58073184169029,6.924638422614615
+s0090lre,Myocardial infarction,49.0,1.0,yes,anterior,"Hypercholesterinemia, Obesity",59.06259308009941,23.16867809754465,26.67876977592403
+s0093lre,Myocardial infarction,49.0,1.0,yes,anterior,"Hypercholesterinemia, Obesity",54.316552705238685,117.96728857044754,174.2850662384058
+s0108lre,Myocardial infarction,49.0,1.0,yes,anterior,"Hypercholesterinemia, Obesity",49.62259593649499,57.582929365304416,48.4490642629658
+s0092lre,Myocardial infarction,49.0,1.0,yes,antero-septal,no,97.331708450204,16.7507651052085,12.466476786897768
+s0098lre,Myocardial infarction,49.0,1.0,yes,antero-septal,no,85.8437483006572,103.11393248261405,167.6537437034371
+s0122lre,Myocardial infarction,49.0,1.0,yes,antero-septal,no,84.64047796544799,30.972613938790584,23.914054185303662
+s0099lre,Myocardial infarction,63.0,1.0,yes,antero-septal,no,82.80278796895101,40.87689596878132,65.1129347174271
+s0107lre,Myocardial infarction,63.0,1.0,yes,antero-septal,no,57.06604766908059,55.66547899815605,77.29528282931341
+s0117lre,Myocardial infarction,63.0,1.0,yes,antero-septal,no,56.46004731121575,34.615712839453856,48.06020202691542
+s0153lre,Myocardial infarction,63.0,1.0,yes,antero-septal,no,74.56720709617237,30.075405516490054,24.52253269809377
+s0100lre,Myocardial infarction,65.0,1.0,yes,inferior,no,94.0945222569108,6.437860559574178,2.1213203435596424
+s0104lre,Myocardial infarction,65.0,1.0,yes,inferior,no,87.9078084391627,7.636930272669192,2.2681662887127594
+s0114lre,Myocardial infarction,65.0,1.0,yes,inferior,no,90.20124279012371,10.430727146246785,2.907394224468121
+s0127lre,Myocardial infarction,65.0,1.0,yes,inferior,no,76.96460276430145,11.77184243631194,4.3336845660255685
+s0102lre,Myocardial infarction,49.0,1.0,no,antero-septal,Arterial Hypertension,101.19845252506848,13.967246722304548,15.749669308697673
+s0106lre,Myocardial infarction,49.0,1.0,no,antero-septal,Arterial Hypertension,89.7216909649975,69.75906649434323,118.32572134308307
+s0115lre,Myocardial infarction,49.0,1.0,no,antero-septal,Arterial Hypertension,77.32239831408434,15.985211225206047,16.431468305812828
+s0165lre,Myocardial infarction,49.0,1.0,no,antero-septal,Arterial Hypertension,83.46509561115715,9.235233998691552,3.449454185406032
+s0105lre,Myocardial infarction,60.0,1.0,no,antero-septal,Hypercholesterinemia,78.43793712237544,14.92884750868606,13.534740085764083
+s0113lre,Myocardial infarction,60.0,1.0,no,antero-septal,Hypercholesterinemia,64.29680495508661,92.80566110406744,155.40166564728457
+s0121lre,Myocardial infarction,60.0,1.0,no,antero-septal,Hypercholesterinemia,60.954541115593685,21.642709280230093,7.710780787370181
+s0157lre,Myocardial infarction,60.0,1.0,no,antero-septal,Hypercholesterinemia,58.37835338777025,14.27708139764755,14.06187624879284
+s0109lre,Myocardial infarction,49.0,1.0,yes,antero-septal,no,121.8427837194576,5.958380242874269,1.3532068693177814
+s0118lre,Myocardial infarction,49.0,1.0,yes,antero-septal,no,91.69844461946045,14.653553624494783,3.901812134256912
+s0123lre,Myocardial infarction,49.0,1.0,yes,antero-septal,no,84.9755996351407,7.580258403268153,2.8163233157138654
+s0158lre,Myocardial infarction,49.0,1.0,yes,antero-septal,no,77.43992508583986,23.50003023649952,12.946412207291097
+s0110lre,Myocardial infarction,40.0,1.0,no,inferior,"Arterial hypertension, Hypercholesterinemia",90.712015111279,11.17466937542015,6.325474520300967
+s0119lre,Myocardial infarction,40.0,1.0,no,inferior,"Arterial hypertension, Hypercholesterinemia",85.98694763113187,12.55851484360556,5.814093306921991
+s0124lre,Myocardial infarction,40.0,1.0,no,inferior,"Arterial hypertension, Hypercholesterinemia",93.70182919747064,6.9896791631325605,3.679996315399777
+s0145lre,Myocardial infarction,40.0,1.0,no,inferior,"Arterial hypertension, Hypercholesterinemia",87.86757147693801,8.135876259191125,6.722108820002233
+s0111lre,Myocardial infarction,75.0,1.0,no,antero-septal,no,74.36652958429153,15.663383231866122,7.482840891093331
+s0116lre,Myocardial infarction,75.0,1.0,no,antero-septal,no,73.82378656194389,18.392655245249884,24.945368880243656
+s0126lre,Myocardial infarction,75.0,1.0,no,antero-septal,no,72.82325422264333,20.927236397339023,28.28657693646596
+s0112lre,Myocardial infarction,50.0,1.0,yes,anterior,Hyperlipoproteinemia Type IV,72.11113485201474,25.24464666988496,12.7290774121578
+s0120lre,Myocardial infarction,50.0,1.0,yes,anterior,Hyperlipoproteinemia Type IV,68.762592442488,26.01676364586524,12.769555139531622
+s0125lre,Myocardial infarction,36.0,1.0,yes,antero-lateral,no,73.40042255710195,38.63229446706218,27.76558186373705
+s0128lre,Myocardial infarction,36.0,1.0,yes,antero-lateral,no,67.54291248257914,47.482525600510144,39.8703955021768
+s0162lre,Myocardial infarction,36.0,1.0,yes,antero-lateral,no,60.13954369560688,59.33292753097605,69.08241839262325
+s0129lre,Myocardial infarction,61.0,1.0,yes,antero-septal,Hyperlipoproteinemia Type IV,89.28147537954261,68.41174176569865,102.10352676335324
+s0134lre,Myocardial infarction,61.0,1.0,yes,antero-septal,Hyperlipoproteinemia Type IV,76.06001697395412,20.658956707200687,14.422205101855956
+s0164lre,Myocardial infarction,61.0,1.0,yes,antero-septal,Hyperlipoproteinemia Type IV,81.22734812695921,47.177190390050335,28.88618639948656
+s0130lre,Myocardial infarction,51.0,1.0,yes,inferior,Hyperlipoproteinemia Type IV,91.80092588320798,26.971354992802706,13.676475313891888
+s0131lre,Myocardial infarction,51.0,1.0,yes,inferior,Hyperlipoproteinemia Type IV,75.15454767880209,9.253049787254428,5.695315594267789
+s0133lre,Myocardial infarction,51.0,1.0,yes,inferior,Hyperlipoproteinemia Type IV,69.79753065546178,14.2037864914578,7.235225279732819
+s0219lre,Myocardial infarction,51.0,1.0,yes,inferior,Hyperlipoproteinemia Type IV,72.49174326517837,16.581232420781678,12.909284838305194
+s0132lre,Myocardial infarction,65.0,1.0,no,infero-lateral,"Gastric ulcers, Hyperglykemia",96.93720752164936,16.81871264937179,7.877458208463372
+s0136lre,Myocardial infarction,65.0,1.0,no,infero-lateral,"Gastric ulcers, Hyperglykemia",84.7947551191227,9.712357215306117,5.364942562195068
+s0138lre,Myocardial infarction,65.0,1.0,no,infero-lateral,"Gastric ulcers, Hyperglykemia",83.05690848172075,8.144964200571408,5.09214456842424
+s0276lre,Myocardial infarction,65.0,1.0,no,infero-lateral,"Gastric ulcers, Hyperglykemia",86.3439118206114,19.66616492341992,10.259217014096704
+s0135lre,Myocardial infarction,49.0,1.0,yes,antero-septal,no,94.5115746287379,8.278506793872232,2.920740703483149
+s0137lre,Myocardial infarction,49.0,1.0,yes,antero-septal,no,91.60249069433732,7.813947161826991,2.1969500666550714
+s0140lre,Myocardial infarction,49.0,1.0,yes,antero-septal,no,76.70834707555639,18.07351413213694,6.564271107473685
+s0347lre,Myocardial infarction,49.0,1.0,yes,antero-septal,no,69.77648899692498,31.37596054270236,36.46178987943572
+s0141lre,Myocardial infarction,52.0,0.0,yes,lateral,"Hyperlipoproteinemia Type IIa, Arterial hypertension, Ventricular fibrillation",85.63016575365091,20.32616156706904,9.70490521258117
+s0144lre,Myocardial infarction,52.0,0.0,yes,lateral,"Hyperlipoproteinemia Type IIa, Arterial hypertension, Ventricular fibrillation",71.60724597014675,46.09836031280735,30.483511025543702
+s0278lre,Myocardial infarction,52.0,0.0,yes,lateral,"Hyperlipoproteinemia Type IIa, Arterial hypertension, Ventricular fibrillation",84.67301878689835,16.406913214929737,11.365792977174976
+s0142lre,Myocardial infarction,66.0,0.0,yes,anterior,Peripheral atherosclerosis,93.06322859692416,15.214986917943762,20.54263858417414
+s0143lre,Myocardial infarction,66.0,0.0,yes,anterior,Peripheral atherosclerosis,91.25377825914074,19.52134836635583,30.656832506153417
+s0146lre,Myocardial infarction,66.0,0.0,yes,anterior,Peripheral atherosclerosis,78.4061561497448,82.03548216324796,133.16330656834944
+s0159lre,Myocardial infarction,66.0,0.0,yes,anterior,Peripheral atherosclerosis,64.12297679662294,62.56901754001628,82.26922267774262
+s0147lre,Myocardial infarction,44.0,1.0,no,infero-lateral,Hyperlipoproteinemia Type IV,107.21039881098363,13.506843298031209,20.315405146698645
+s0148lre,Myocardial infarction,44.0,1.0,no,infero-lateral,Hyperlipoproteinemia Type IV,82.3970282488493,18.142379259624832,22.700954458641892
+s0155lre,Myocardial infarction,44.0,1.0,no,infero-lateral,Hyperlipoproteinemia Type IV,63.31372633597276,197.6510694157749,342.20226937060653
+s0217lre,Myocardial infarction,44.0,1.0,no,infero-lateral,Hyperlipoproteinemia Type IV,85.10267012026999,20.71812219720379,8.686035054554184
+s0156lre,Myocardial infarction,64.0,0.0,yes,antero-septal,Postop. Thyroidectomy,104.44396470244556,49.552101785195646,83.71877527373016
+s0161lre,Myocardial infarction,64.0,0.0,yes,antero-septal,Postop. Thyroidectomy,99.42415569718472,9.564280759361234,4.02636811675736
+s0168lre,Myocardial infarction,64.0,0.0,yes,antero-septal,Postop. Thyroidectomy,89.65626801910591,31.65347180423945,18.52375263721436
+s0184lre,Myocardial infarction,64.0,0.0,yes,antero-septal,Postop. Thyroidectomy,76.38264687729635,99.61392230943936,167.48499567490748
+s0160lre,Myocardial infarction,86.0,1.0,yes,antero-septal,Peripheral atherosclerosis,82.4455161786849,10.239815907621711,12.263663233203848
+s0163lre,Myocardial infarction,86.0,1.0,yes,antero-septal,Peripheral atherosclerosis,75.73789725485533,10.264770223034947,5.1478150704935
+s0167lre,Myocardial infarction,86.0,1.0,yes,antero-septal,Peripheral atherosclerosis,56.92722878145203,30.64443977568854,42.11899032258956
+s0171lre,Myocardial infarction,64.0,1.0,no,antero-lateral,no,97.50487590804572,6.22364242460773,1.6778609570832583
+s0172lre,Myocardial infarction,64.0,1.0,no,antero-lateral,no,79.69511243574314,6.428576407905257,3.854987308969756
+s0180lre,Myocardial infarction,64.0,1.0,no,antero-lateral,no,73.91320650764574,83.61511779544747,143.92911424745708
+s0277lre,Myocardial infarction,64.0,1.0,no,antero-lateral,no,66.6933324472947,22.81356926550887,32.19237807850185
+s0173lre,Myocardial infarction,42.0,0.0,yes,inferior,"Postop. Thyriodectomy, Ventricular fibrillation",75.57001136509622,122.0478326944951,116.32622322499004
+s0178lre,Myocardial infarction,42.0,0.0,yes,inferior,"Postop. Thyriodectomy, Ventricular fibrillation",76.41365638536378,24.21918985201864,24.203850703739043
+s0186lre,Myocardial infarction,42.0,0.0,yes,inferior,"Postop. Thyriodectomy, Ventricular fibrillation",64.85322954288102,29.718578741774103,37.16180835212409
+s0314lre,Myocardial infarction,42.0,0.0,yes,inferior,"Postop. Thyriodectomy, Ventricular fibrillation",72.63559780290542,38.24865612455965,23.739000526252184
+s0174lre,Myocardial infarction,44.0,0.0,yes,inferior,no,79.05221220365024,28.504453004041363,16.879178495017662
+s0177lre,Myocardial infarction,44.0,0.0,yes,inferior,no,66.39580456209767,30.873159864192715,30.831931499664435
+s0185lre,Myocardial infarction,44.0,0.0,yes,inferior,no,68.35367031754596,24.039839721971525,24.3573206606852
+s0215lre,Myocardial infarction,44.0,0.0,yes,inferior,no,65.58657132962438,36.16342297529816,21.329972853604005
+s0179lre,Myocardial infarction,55.0,0.0,no,antero-septal,no,92.3127322314566,15.07788330419973,11.492606318846914
+s0181lre,Myocardial infarction,55.0,0.0,no,antero-septal,no,55.10820980035095,152.71148700615018,216.8635873861276
+s0187lre,Myocardial infarction,55.0,0.0,no,antero-septal,no,55.85893365449152,73.5190436239608,77.06237424197053
+s0213lre,Myocardial infarction,55.0,0.0,no,antero-septal,no,65.80756456313395,227.344114493372,338.9491837729188
+s0190lre,Myocardial infarction,44.0,1.0,yes,infero-lateral,Arterial hypertension,78.0579984575763,27.2457026867004,9.917906274252893
+s0191lre,Myocardial infarction,66.0,1.0,yes,antero-septal,"Obesity, Ventricular fibrillation",80.60288576694211,12.241479993941407,7.817359599705716
+s0192lre,Myocardial infarction,47.0,1.0,no,infero-lateral,no,82.80738149302815,20.68749773339873,10.12486150585876
+s0195lre,Myocardial infarction,47.0,1.0,no,infero-lateral,no,89.17902139795957,22.185580118472853,10.675692680158203
+s0197lre,Myocardial infarction,47.0,1.0,no,infero-lateral,no,72.27308758078674,297.7400840839122,456.9905479353546
+s0218lre,Myocardial infarction,47.0,1.0,no,infero-lateral,no,68.57694617180329,38.951575700600365,17.26802291475823
+s0194lre,Myocardial infarction,66.0,0.0,no,infero-lateral,"Hyperlipoproteinemia Type IIb, Obesity, Arterial hypertension",105.5121658037066,83.34352610117665,134.93103363712825
+s0196lre,Myocardial infarction,48.0,0.0,no,anterior,no,135.2538141047745,135.94238748848204,172.81298580616303
+s0198lre,Myocardial infarction,53.0,1.0,yes,inferior,no,73.26887704810312,24.856847082149518,10.829615669060852
+s0216lre,Myocardial infarction,52.0,0.0,yes,antero-septal,"Gastric ulcers, Struma nodosa",80.43416635717819,9.302192631508872,6.279666434319245
+s0208lre,Myocardial infarction,63.0,0.0,no,infero-lateral,"Hyperlipoproteinemia Type IIb, Arterial hypertension, Obesity",88.0426720674325,14.57768659262945,15.4021928604397
+s0209lre,Myocardial infarction,54.0,1.0,no,antero-septal,Kidney stones,85.91805278228307,11.622922343656676,10.25323531163838
+s0210lre,Myocardial infarction,37.0,1.0,yes,antero-septal,"Arterial hypertension, Gastritis",83.42681470276979,24.54986849880573,18.254876234286385
+s0212lre,Myocardial infarction,68.0,0.0,no,antero-lateral,Arterial hypertension,80.98181191243347,63.972528335461625,53.22249512121829
+s0214lre,Myocardial infarction,62.0,1.0,yes,antero-lateral,"Arterial hypertension, Kidney cysts",57.57396853783441,418.0183628283425,606.3723742970813
+s0220lre,Myocardial infarction,72.0,1.0,no,postero-lateral,"Hypercholesterinemia, Arterial hypertension, Hyperuricemia",89.99862706271173,12.651821728559709,4.424530550039777
+s0221lre,Myocardial infarction,52.0,1.0,no,infero-postero-lateral,no,66.42803728590876,42.41975655318811,43.00744121660808
+s0226lre,Myocardial infarction,52.0,1.0,no,infero-postero-lateral,no,72.50042772718403,20.166444819742637,8.038683844772375
+s0229lre,Myocardial infarction,52.0,1.0,no,infero-postero-lateral,no,70.17822407557259,14.925538070012252,6.445258209215411
+s0282lre,Myocardial infarction,52.0,1.0,no,infero-postero-lateral,no,54.22635848242925,36.666649360534485,25.118542483006223
+s0225lre,Myocardial infarction,68.0,1.0,no,inferior,no,77.9272943745213,18.462272020019704,14.844087670702775
+s0231lre,Myocardial infarction,68.0,1.0,no,inferior,no,70.0829100552514,16.986025510891054,6.446751589801337
+s0280lre,Myocardial infarction,68.0,1.0,no,inferior,no,70.52235820602812,14.002172106535603,6.627579650979322
+s0227lre,Myocardial infarction,59.0,1.0,yes,infero-lateral,"Arterial hypertension, Diabetes mellitus",140.6481014605291,4.135058150577686,2.7525949622523886
+s0230lre,Myocardial infarction,59.0,1.0,yes,infero-lateral,"Arterial hypertension, Diabetes mellitus",90.63686927936578,7.795258037526213,5.5011960422018085
+s0283lre,Myocardial infarction,59.0,1.0,yes,infero-lateral,"Arterial hypertension, Diabetes mellitus",62.58620636889699,20.9025758112438,16.311844505954582
+s0228lre,Myocardial infarction,44.0,1.0,yes,antero-lateral,"Hyperlipoproteinemia Type IIb, Struma",88.35364487118439,18.68292297965142,6.743371107407301
+s0232lre,Myocardial infarction,62.0,1.0,yes,antero-lateral,no,61.6732791575539,25.93712658929496,16.010413278030434
+s0233lre,Myocardial infarction,62.0,1.0,yes,antero-lateral,no,65.97042574465229,25.561879379641763,11.457143144443036
+s0234lre,Myocardial infarction,62.0,1.0,yes,antero-lateral,no,63.36353420832168,25.98478330841791,12.757597835055329
+s0284lre,Myocardial infarction,62.0,1.0,yes,antero-lateral,no,59.93856347897891,22.2703760087308,10.601385783517808
+s0235lre,Myocardial infarction,52.0,1.0,yes,inferior,Hyperlipoproteinemia Type IIb,80.23997994209515,21.890903231864268,7.919413189318884
+s0236lre,Myocardial infarction,80.0,1.0,yes,infero-lateral,Arterial hypertension,62.76445939715533,13.426884690537756,5.740172456636889
+s0237lre,Myocardial infarction,40.0,1.0,yes,infero-lateral,Hyperlipoproteinemia Type IIa,85.39586090175625,20.411713225739184,7.380320846851384
+s0240lre,Myocardial infarction,40.0,1.0,yes,infero-lateral,Hyperlipoproteinemia Type IIa,59.22206692200788,23.162504371324115,15.919844265615218
+s0244lre,Myocardial infarction,40.0,1.0,yes,infero-lateral,Hyperlipoproteinemia Type IIa,57.69128920899677,33.50524223491786,19.351763246297256
+s0318lre,Myocardial infarction,40.0,1.0,yes,infero-lateral,Hyperlipoproteinemia Type IIa,62.11690640767489,16.467811965864446,12.064994925987437
+s0238lre,Myocardial infarction,63.0,1.0,no,antero-lateral,"Hypercholesterinemia, Ventricular fibrillation",68.15217015011645,19.148456517447983,13.216445006303744
+s0243lre,Myocardial infarction,63.0,1.0,no,antero-lateral,"Hypercholesterinemia, Ventricular fibrillation",71.01202578994425,15.699577302390738,11.083468932698352
+s0249lre,Myocardial infarction,63.0,1.0,no,antero-lateral,"Hypercholesterinemia, Ventricular fibrillation",65.45939766247912,11.2869581177131,6.7984933768535765
+s0252lre,Myocardial infarction,63.0,1.0,no,antero-lateral,"Hypercholesterinemia, Ventricular fibrillation",62.63290534451124,14.024786286946792,11.129819466457317
+s0239lre,Myocardial infarction,80.0,0.0,no,infero-lateral,"Arterial hypertension, Hyperlipemia, Ventricular fibrillation",112.00099909520831,85.3365078186894,160.86769186419716
+s0241lre,Myocardial infarction,80.0,0.0,no,infero-lateral,"Arterial hypertension, Hyperlipemia, Ventricular fibrillation",88.63746801908648,4.049165998123645,3.460663300032304
+s0245lre,Myocardial infarction,80.0,0.0,no,infero-lateral,"Arterial hypertension, Hyperlipemia, Ventricular fibrillation",83.2948510594964,5.309398666019506,3.430134514098554
+s0406lre,Myocardial infarction,80.0,0.0,no,infero-lateral,"Arterial hypertension, Hyperlipemia, Ventricular fibrillation",71.49962555262695,22.711926171374003,24.369227711588632
+s0242lre,Myocardial infarction,50.0,1.0,yes,inferior,M. Bechterew,85.64578887361758,21.484462767838327,18.89052280514893
+s0246lre,Myocardial infarction,50.0,1.0,yes,inferior,M. Bechterew,71.43505711412855,23.432483086872328,24.63195756194244
+s0248lre,Myocardial infarction,50.0,1.0,yes,inferior,M. Bechterew,67.69193765064823,18.628856059908117,16.066269013059628
+s0327lre,Myocardial infarction,50.0,1.0,yes,inferior,M. Bechterew,78.15383223206557,30.836433657976464,30.52722661208925
+s0247lre,Myocardial infarction,43.0,1.0,yes,antero-lateral,no,100.62171361632,10.685227361625651,6.37238808006323
+s0250lre,Myocardial infarction,43.0,1.0,yes,antero-lateral,no,95.08079749014163,13.540623915086853,8.887881887404019
+s0253lre,Myocardial infarction,43.0,1.0,yes,antero-lateral,no,87.2679253619222,21.813967510114047,10.345545081352796
+s0319lre,Myocardial infarction,43.0,1.0,yes,antero-lateral,no,87.72574476683005,13.401232281102466,13.131271950207376
+s0251lre,Myocardial infarction,65.0,1.0,yes,inferior,"Arterial hypertension, Diabetes mellitus",116.40795936933512,5.680879336607663,2.704947704013511
+s0254lre,Myocardial infarction,65.0,1.0,yes,inferior,"Arterial hypertension, Diabetes mellitus",81.93366065848367,31.823465573769564,19.05746826769478
+s0258lre,Myocardial infarction,65.0,1.0,yes,inferior,"Arterial hypertension, Diabetes mellitus",76.71767883927599,30.19130078951965,31.107267140742486
+s0285lre,Myocardial infarction,65.0,1.0,yes,inferior,"Arterial hypertension, Diabetes mellitus",105.35927892183824,16.00409928830269,8.336965874945152
+s0255lre,Myocardial infarction,68.0,1.0,yes,inferior,"Hyperlipoproteinemia Type IIa, Diabetes mellitus, Renal insufficiency, Bladder cancer",19.39136351967499,2728.5586833777943,3691.0382135315263
+s0259lre,Myocardial infarction,68.0,1.0,yes,inferior,"Hyperlipoproteinemia Type IIa, Diabetes mellitus, Renal insufficiency, Bladder cancer",79.15533710937875,112.70676627495548,164.1869402582049
+s0262lre,Myocardial infarction,68.0,1.0,yes,inferior,"Hyperlipoproteinemia Type IIa, Diabetes mellitus, Renal insufficiency, Bladder cancer",76.85774494168398,196.44869617761543,260.5410636220965
+s0317lre,Myocardial infarction,68.0,1.0,yes,inferior,"Hyperlipoproteinemia Type IIa, Diabetes mellitus, Renal insufficiency, Bladder cancer",81.74383363161392,67.76165442049877,74.4736508795203
+s0256lre,Myocardial infarction,75.0,1.0,yes,postero-lateral,"Diabetes mellitus, Renal insufficiency",80.37898599548123,0.7697072563032759,1.2460463791317595
+s0257lre,Myocardial infarction,75.0,1.0,yes,postero-lateral,"Diabetes mellitus, Renal insufficiency",93.0659734422771,48.14227464625086,72.869980725324
+s0263lre,Myocardial infarction,75.0,1.0,yes,postero-lateral,"Diabetes mellitus, Renal insufficiency",81.89777142258274,142.5530427684603,209.9687496200172
+s0269lre,Myocardial infarction,75.0,1.0,yes,postero-lateral,"Diabetes mellitus, Renal insufficiency",66.21033785160255,69.39388976349386,52.65890238126884
+s0260lre,Myocardial infarction,48.0,1.0,yes,infero-postero-lateral,"Hyperlipoproteinemia Type IIb, Ventricular fibrillation",91.04975497128966,69.80280108361097,68.851077916272
+s0261lre,Myocardial infarction,48.0,1.0,yes,infero-postero-lateral,"Hyperlipoproteinemia Type IIb, Ventricular fibrillation",95.62886401752584,8.611447821020612,6.039465052597536
+s0265lre,Myocardial infarction,48.0,1.0,yes,infero-postero-lateral,"Hyperlipoproteinemia Type IIb, Ventricular fibrillation",58.57410598185986,35.80461584726914,18.61451046898628
+s0315lre,Myocardial infarction,48.0,1.0,yes,infero-postero-lateral,"Hyperlipoproteinemia Type IIb, Ventricular fibrillation",84.23502995034637,18.51405954790565,8.45111730174175
+s0264lre,Myocardial infarction,53.0,1.0,yes,anterior,"Arterial hypertension, Hyperlipoproteinemia Type IIa",80.94323908131507,15.603972482007627,5.397893561562768
+s0266lre,Myocardial infarction,53.0,1.0,yes,anterior,"Arterial hypertension, Hyperlipoproteinemia Type IIa",66.8194901235896,33.43952713112367,13.62012982713221
+s0270lre,Myocardial infarction,53.0,1.0,yes,anterior,"Arterial hypertension, Hyperlipoproteinemia Type IIa",72.233298536067,42.37013979494312,13.12580529742394
+s0346lre,Myocardial infarction,53.0,1.0,yes,anterior,"Arterial hypertension, Hyperlipoproteinemia Type IIa",79.56778021846056,30.244685892686977,7.597054151977559
+s0267lre,Myocardial infarction,65.0,1.0,no,antero-septal,"Arterial hypertension, Hypercholesterinemia, Chronic hepatitis",71.21985120976369,32.25075879395816,12.979030159476364
+s0271lre,Myocardial infarction,65.0,1.0,no,antero-septal,"Arterial hypertension, Hypercholesterinemia, Chronic hepatitis",80.48735553231562,31.49557823295858,10.228957862234472
+s0279lre,Myocardial infarction,65.0,1.0,no,antero-septal,"Arterial hypertension, Hypercholesterinemia, Chronic hepatitis",57.29485853977804,41.95583974550424,25.174530965755743
+s0320lre,Myocardial infarction,65.0,1.0,no,antero-septal,"Arterial hypertension, Hypercholesterinemia, Chronic hepatitis",57.34150564292282,22.302788459936696,17.700439417018877
+s0268lre,Myocardial infarction,45.0,1.0,yes,anterior,Hyperlipoproteinemia Type IIa,76.89184773982824,59.2725050387308,35.101134670725585
+s0272lre,Myocardial infarction,45.0,1.0,yes,anterior,Hyperlipoproteinemia Type IIa,98.96765434679388,16.371078594338297,6.1648454278218665
+s0286lre,Myocardial infarction,45.0,1.0,yes,anterior,Hyperlipoproteinemia Type IIa,64.86964336412495,52.15703075959114,29.61252504168231
+s0290lre,Myocardial infarction,45.0,1.0,yes,anterior,Hyperlipoproteinemia Type IIa,61.92114459971998,60.255083945198656,33.46308081718983
+s0281lre,Myocardial infarction,55.0,1.0,yes,antero-septal,Hypercholesterinemia,75.92285148062949,24.223091086037144,23.83056510730145
+s0288lre,Myocardial infarction,55.0,1.0,yes,antero-septal,Hypercholesterinemia,73.96442856504689,11.148313941970487,7.343607521414215
+s0289lre,Myocardial infarction,55.0,1.0,yes,antero-septal,Hypercholesterinemia,71.31523593933804,13.321043257833042,9.08623692694271
+s0313lre,Myocardial infarction,55.0,1.0,yes,antero-septal,Hypercholesterinemia,60.58968623538291,28.814803594307023,18.97736417095885
+s0296lre,Myocardial infarction,56.0,0.0,yes,posterior,"Arterial hypertension, Diabetes mellitus, Hyperlipoproteinemia Type IV, Obesity",74.60786973187845,12.858164113791092,9.289283080079109
+s0297lre,Myocardial infarction,56.0,0.0,yes,posterior,"Arterial hypertension, Diabetes mellitus, Hyperlipoproteinemia Type IV, Obesity",49.50437002701313,78.28437577953821,69.88631321076788
+s0298lre,Myocardial infarction,56.0,0.0,yes,posterior,"Arterial hypertension, Diabetes mellitus, Hyperlipoproteinemia Type IV, Obesity",47.94723428660109,76.7499658954795,69.7585518453154
+s0345lre,Myocardial infarction,56.0,0.0,yes,posterior,"Arterial hypertension, Diabetes mellitus, Hyperlipoproteinemia Type IV, Obesity",72.19164760135196,20.653261568001977,15.722314602837212
+s0316lre,Myocardial infarction,66.0,0.0,yes,infero-lateral,"Hyperlipoproteinemia Type IV b, Diabetes mellitus, Peripheral atherosclerosis, Arterial hypertension, Cerebral stroke, Colon cancer",87.80293741906128,2.404634440350085,2.4776105862034634
+s0321lre,Myocardial infarction,66.0,1.0,yes,infero-postero-lateral,Arterial hypertension,68.5009415883441,64.98992169929596,93.2768239782684
+s0326lre,Myocardial infarction,66.0,1.0,yes,infero-postero-lateral,Arterial hypertension,85.22442387744555,18.450051946788644,15.937182587266664
+s0330lre,Myocardial infarction,66.0,1.0,yes,infero-postero-lateral,Arterial hypertension,92.77759096017589,54.16346800412402,93.47017859036264
+s0339lre,Myocardial infarction,54.0,1.0,yes,inferior,Gastric ulcers,75.49319772910168,33.41900122055778,22.74516778005072
+s0343lre,Myocardial infarction,54.0,1.0,yes,inferior,Gastric ulcers,64.84395910054255,46.7668102368816,44.60021145452808
+s0352lre,Myocardial infarction,54.0,1.0,yes,inferior,Gastric ulcers,68.01063291085205,43.59092480981786,30.25
+s0413lre,Myocardial infarction,54.0,1.0,yes,inferior,Gastric ulcers,92.43126498039456,13.436844819424635,4.869731585445518
+s0344lre,Myocardial infarction,80.0,0.0,no,infero-lateral,"Arterial hypertension, Hyperlipoproteinemia Type IIa",66.0803439355478,23.061927849358824,10.711013325153363
+s0355lre,Myocardial infarction,80.0,0.0,no,infero-lateral,"Arterial hypertension, Hyperlipoproteinemia Type IIa",65.45013285578797,30.80293869516453,22.29693310315236
+s0359lre,Myocardial infarction,80.0,0.0,no,infero-lateral,"Arterial hypertension, Hyperlipoproteinemia Type IIa",66.62639152514595,21.926229271325763,9.180725150319788
+s0372lre,Myocardial infarction,80.0,0.0,no,infero-lateral,"Arterial hypertension, Hyperlipoproteinemia Type IIa",72.69392013726423,22.298212962570744,23.115494521132828
+s0348lre,Myocardial infarction,51.0,1.0,yes,inferior,"Obesity, Arterial hypertension",65.59295467907388,53.02123824180709,37.56966428911427
+s0356lre,Myocardial infarction,51.0,1.0,yes,inferior,"Obesity, Arterial hypertension",58.40726832946307,27.31817561775895,25.827223128812264
+s0360lre,Myocardial infarction,51.0,1.0,yes,inferior,"Obesity, Arterial hypertension",52.549886280096295,34.60041892664004,25.467348872347483
+s0418lre,Myocardial infarction,51.0,1.0,yes,inferior,"Obesity, Arterial hypertension",61.92823924860766,33.405493384561325,21.21239760059696
+s0353lre,Myocardial infarction,78.0,0.0,no,antero-septal,Arterial hypertension,88.2975247236217,12.833805015791208,5.155660803752832
+s0357lre,Myocardial infarction,78.0,0.0,no,antero-septal,Arterial hypertension,87.935180773972,4.412836506951335,4.1883372207474885
+s0361lre,Myocardial infarction,78.0,0.0,no,antero-septal,Arterial hypertension,89.23319685725902,8.70162076672948,4.287038397874699
+s0408lre,Myocardial infarction,78.0,0.0,no,antero-septal,Arterial hypertension,73.757441962665,19.474182450546245,9.762282431551617
+s0354lre,Myocardial infarction,44.0,0.0,yes,inferior,Arterial hypertension,80.17679352823163,11.347764441771664,6.652067347825035
+s0358lre,Myocardial infarction,44.0,0.0,yes,inferior,Arterial hypertension,75.13851668421529,20.907534232624567,10.986226972832464
+s0362lre,Myocardial infarction,44.0,0.0,yes,inferior,Arterial hypertension,74.53814634430866,22.876130593131236,22.0082189676416
+s0411lre,Myocardial infarction,44.0,0.0,yes,inferior,Arterial hypertension,66.68488451572995,21.705825419524068,15.059349255528938
+s0367lre,Myocardial infarction,48.0,1.0,yes,inferior,no,92.37825255252277,27.976407036096514,20.358922227999063
+s0371lre,Myocardial infarction,48.0,1.0,yes,inferior,no,73.72849629421131,27.01678040464264,20.479152410518296
+s0375lre,Myocardial infarction,48.0,1.0,yes,inferior,no,66.61755913736563,48.51803526557672,33.402634626627886
+s0378lre,Myocardial infarction,48.0,1.0,yes,inferior,no,70.68658909292625,37.79822195811776,27.471423415571536
+s0396lre,Myocardial infarction,48.0,1.0,yes,inferior,no,83.9881143105437,32.187588309703614,19.33647773171687
+s0368lre,Myocardial infarction,71.0,0.0,no,antero-lateral,"Diabetes mellitus, Hyperthyroidism",112.56664663413576,7.5681044865754,6.52693947935295
+s0370lre,Myocardial infarction,71.0,0.0,no,antero-lateral,"Diabetes mellitus, Hyperthyroidism",112.01804355981182,2.5178167500825377,1.2682628142611987
+s0376lre,Myocardial infarction,71.0,0.0,no,antero-lateral,"Diabetes mellitus, Hyperthyroidism",98.70433611705664,11.790157765562444,10.49372572396918
+s0412lre,Myocardial infarction,71.0,0.0,no,antero-lateral,"Diabetes mellitus, Hyperthyroidism",101.53300474145408,5.9793831163845255,3.409545424246464
+s0369lre,Myocardial infarction,46.0,1.0,yes,inferior,no,81.27995224037033,13.916162282949244,10.934872133291206
+s0373lre,Myocardial infarction,46.0,1.0,yes,inferior,no,62.73577847117724,26.50213031562181,21.012909671945856
+s0377lre,Myocardial infarction,46.0,1.0,yes,inferior,no,63.76648743124767,31.382442758628944,23.811411829904863
+s0417lre,Myocardial infarction,46.0,1.0,yes,inferior,no,72.16990109273803,32.709487674703894,21.65691711263469
+s0379lre,Myocardial infarction,43.0,1.0,yes,antero-lateral,"Diabetes mellitus, Arterial hypertension, Obesity",104.52440061254116,9.24411335907021,3.524803884507963
+s0381lre,Myocardial infarction,43.0,1.0,yes,antero-lateral,"Diabetes mellitus, Arterial hypertension, Obesity",87.22959291725411,13.595084533599676,10.751180343938
+s0385lre,Myocardial infarction,43.0,1.0,yes,antero-lateral,"Diabetes mellitus, Arterial hypertension, Obesity",66.70103582030218,23.22845625203101,10.464983182780228
+s0395lre,Myocardial infarction,43.0,1.0,yes,antero-lateral,"Diabetes mellitus, Arterial hypertension, Obesity",61.07885569774885,32.345023183445555,21.610182784974302
+s0380lre,Myocardial infarction,68.0,1.0,no,anterior,"Diabetes mellitus, Arterial hypertension, Hypercholesterinemia",80.95082367865525,161.22492293541822,220.85852953016135
+s0382lre,Myocardial infarction,68.0,1.0,no,anterior,"Diabetes mellitus, Arterial hypertension, Hypercholesterinemia",65.89348513920743,324.78880015462715,505.8965915525996
+s0384lre,Myocardial infarction,68.0,1.0,no,anterior,"Diabetes mellitus, Arterial hypertension, Hypercholesterinemia",60.69879060251227,390.592765258022,578.760485866131
+s0394lre,Myocardial infarction,68.0,1.0,no,anterior,"Diabetes mellitus, Arterial hypertension, Hypercholesterinemia",66.26869438834127,316.9097370586411,524.6194699353944
+s0386lre,Myocardial infarction,63.0,0.0,no,inferior,"Pulmonary fibrosis, Arterial hypertension, Hyperlipoproteinemia Type IIa",98.16638408807827,46.07710859796753,37.903811480261226
+s0389lre,Myocardial infarction,63.0,0.0,no,inferior,"Pulmonary fibrosis, Arterial hypertension, Hyperlipoproteinemia Type IIa",64.78217065775897,64.63129931691591,67.73804413290082
+s0398lre,Myocardial infarction,63.0,0.0,no,inferior,"Pulmonary fibrosis, Arterial hypertension, Hyperlipoproteinemia Type IIa",76.91382667966666,30.95787513809142,43.963150713860976
+s0409lre,Myocardial infarction,63.0,0.0,no,inferior,"Pulmonary fibrosis, Arterial hypertension, Hyperlipoproteinemia Type IIa",100.17393291248104,30.18167183843201,46.10422974088169
+s0387lre,Myocardial infarction,52.0,1.0,yes,antero-lateral,Hypercholesterinemia,79.2096982739832,57.97599031097814,27.083082050116328
+s0388lre,Myocardial infarction,52.0,1.0,yes,antero-lateral,Hypercholesterinemia,82.48869734616673,24.980034490413548,13.274469422976516
+s0397lre,Myocardial infarction,52.0,1.0,yes,antero-lateral,Hypercholesterinemia,66.14395744544944,23.88584624403437,17.51707738180088
+s0419lre,Myocardial infarction,52.0,1.0,yes,antero-lateral,Hypercholesterinemia,78.89005189007031,36.35617983342773,16.748835479903846
+s0399lre,Myocardial infarction,72.0,0.0,no,inferior,"Arterial hypertension, Hyperlipemia, Peripheral atherosclerosis, Hyperuricemia, M. Basedow, Colon cancer",110.2963690386226,3.434273662504552,3.8797721039962334
+s0401lre,Myocardial infarction,72.0,0.0,no,inferior,"Arterial hypertension, Hyperlipemia, Peripheral atherosclerosis, Hyperuricemia, M. Basedow, Colon cancer",80.61392728101845,10.671458708150087,12.104261972327633
+s0407lre,Myocardial infarction,72.0,0.0,no,inferior,"Arterial hypertension, Hyperlipemia, Peripheral atherosclerosis, Hyperuricemia, M. Basedow, Colon cancer",105.55104222318754,2.760164390518537,3.1152848986890427
+s0400lre,Myocardial infarction,57.0,1.0,yes,antero-septal,"Diabetes mellitus, Hyperlipoproteinemia Type IIa",111.00977114733854,11.74288908137456,17.663924196210726
+s0410lre,Myocardial infarction,57.0,1.0,yes,antero-septal,"Diabetes mellitus, Hyperlipoproteinemia Type IIa",130.62177127356378,142.85273116427558,120.55737762913148
+s0414lre,Myocardial infarction,57.0,1.0,yes,antero-septal,"Diabetes mellitus, Hyperlipoproteinemia Type IIa",89.93686638813367,109.25287982832832,183.50839588680063
+s0416lre,Myocardial infarction,72.0,0.0,no,inferior,"Arterial hypertension, Hyperlipoproteinemia Type IIa, Obesity",93.46570527159685,140.43839134890004,235.22511662517988
+s0332lre,Myocardial infarction,52.0,1.0,unknown,no,"Recurrent ventricular tachycardia, ACVB (RIVA)",52.45731692251919,8.52611881944379,8.29863524555547
+s0306lre,Healthy control,58.0,1.0,unknown,no,no,61.88132722879504,64.29476631987491,42.869991916217465
+s0303lre,Healthy control,32.0,0.0,unknown,no,no,77.78206513382271,34.89409554676085,21.50146332624987
+s0030_re,Valvular heart disease,46.0,1.0,unknown,no,"Prosthetic valve, Aortic stenosis (moderate, prostetic valve), Aortic regurgitation (grade 2-3)",76.92634296813257,4.81492842755561,3.85937000585656
+s0199_re,Valvular heart disease,41.0,0.0,unknown,no,"Mitral stenosis/regurgitation, Pulmonary fibrosis, Anemia",91.32006743884298,10.810859665946644,7.625146368618582
+s0013_re,Myocardial infarction,77.0,1.0,no,infero-posterior,"Peripheral atherosclerosis, Cerebral stroke, COLD",73.2649227949347,171.14155343788167,155.51052288277063
+s0349lre,Dysrhythmia,17.0,1.0,no,no,Congenital complete AV-block,81.30697011310767,295.40680759384867,427.0718128527489
+s0003_re,Valvular heart disease,,,no,no,"Mitral regurgitation, Arterial hypertension",73.76941032002414,4.931609569588808,5.715476066494082
+s0203_re,Myocardial infarction,75.0,1.0,no,no,"Post ventricular fibrillation, COLD, Hyperlipemia",88.29288405432604,143.98519315907663,240.8210797518153
+s0169_re,Dysrhythmia,59.0,1.0,no,no,"Palpitation, Arterial hypertension, Obesity",49.46494050190152,47.11906675235517,43.51015207205479
+s0018cre,Dysrhythmia,65.0,0.0,no,no,"Atrial fibrillation, Coronary artery disease,COLD, Aortic stenosis(gradient 85 mmHg)/regurgitation (grade 1-2)",102.54509216804809,104.8872874182375,148.42479359877416
+s0018lre,Dysrhythmia,65.0,0.0,no,no,"Atrial fibrillation, Coronary artery disease,COLD, Aortic stenosis(gradient 85 mmHg)/regurgitation (grade 1-2)",107.69804618261595,85.91916959389042,117.63685489517998
+s0012_re,Valvular heart disease,68.0,0.0,no,no,"Synkope, Stable angina, Aortic stenosis (gradient 90mmHg), Varicosis",73.34929365339072,15.437078144600813,16.973181460436017
+s0023_re,Heart failure,74.0,0.0,no,no,"Arteriel hypertension, Diabetes mellitus, diabetic nephropathy, Basalioma",65.68164651721587,188.60958013300572,334.85971038783634
+s0302lre,Healthy control,54.0,1.0,unknown,no,no,61.70239747494249,25.85775492066708,14.137867956125053
+s0291lre,Healthy control,37.0,1.0,unknown,no,no,67.33826424668723,32.27675826373751,25.528893619756
+s0292lre,Healthy control,37.0,1.0,unknown,no,no,68.64927489315299,39.3395355905672,27.385144765842558
+s0183_re,Heart failure,70.0,1.0,yes,no,"Coronary heart disease, Arterial hypertension",87.54053251463374,7.213296738083761,6.4449233538527855
+s0001_re,,83.0,,n,,,72.58134370493057,13.713229269753748,17.234977355495552
+s0331lre,Myocardial infarction,72.0,1.0,no,antero-septal,Arterial hypertension,75.96975583158789,14.166563827955272,7.63777875665853
+s0311lre,Healthy control,69.0,0.0,unknown,no,no,85.92440458419536,18.9363849545232,21.660515093377384
+s0312lre,Healthy control,68.0,1.0,unknown,no,no,66.40095364101671,39.22375049857679,28.058510295452248
+s0224_re,Heart failure,61.0,0.0,no,no,"Prosthetic valve in mitral position, Mitral regurgitation (grade 2-3), Pulmonary hypertension, Diabetes mellitus",72.85638917459973,211.2593719157146,269.1848384897026
+s0006_re,,,,n,,,74.30508725610201,60.589439618110966,17.189790251451264
+s0154_re,Angina/Other Symptoms,62.0,1.0,no,no,"Coronary heart disease, Arterial hypertension",72.4813567262442,163.20872798012027,204.491497933955
+s0342lre,Cardiomyopathy,32.0,0.0,no,no,"Heart failure (NYHA 3), Hypertrophic obstructive cardiomyopathy (intraventricular gradient 100-160mmHg)",70.20516483580819,22.028572258219725,26.2694253223575
+s0383lre,Cardiomyopathy,32.0,0.0,no,no,"Heart failure (NYHA 3), Hypertrophic obstructive cardiomyopathy (intraventricular gradient 100-160mmHg)",65.1859785891785,42.42233694016333,59.08933220411167
+s0182_re,Myocardial infarction,63.0,1.0,no,anterior,"Arterial Hypertension, Hyperlipidemia, Hyperuricemia",65.1758739253275,24.080939904137185,15.58352186914607
+s0189_re,Cardiomyopathy,53.0,1.0,yes,no,"Heart failure (NYHA 2-3), Alcohol abuse, Dilated cardiomyopathy",100.63374278335084,14.251768424508112,5.72455166832117
+s0166_re,Angina/Other Symptoms,75.0,1.0,no,no,"Coronary heart disease, Arterial Hypertension, Diabetes mellitus, Hyperlipoproteinemia Type IIa, Aortic stenosis (mild), Obesity",55.682000273697234,201.2857888816399,243.76951359342647
+s0273lre,Healthy control,26.0,1.0,unknown,no,no,102.75562844071544,17.216796436605392,3.3779071050365506
+s0393lre,Dysrhythmia,31.0,1.0,yes,no,"Palpitation, Obesity, EP-Lab: Inducible ectopic atrial tachycardia",57.85686681587515,38.207378497635375,31.304064343858688
+s0334lre,Myocardial infarction,54.0,0.0,no,no,"Recurrent ventricular fibrillation, Arterial hypertension, Peripheral atherosclerosis, Cardioverter-Defibrillator (1993), postop. ACVB (1991), Mitral regurgitation grade II",73.84924658179922,8.533818221813721,4.39833192710682
+s0205_re,,51.0,1.0,n,,,89.45877067448667,0.6005949431307973,0.9534625892455924
+s0392lre,Cardiomyopathy,52.0,1.0,yes,no,"Recurrent pulmonary oedema, Hypertrophic obstructive cardiomyopathy (intraventricular gradient 70-90mmHg), Hyperlipoproteinemia, Diabetes mellitus, Obesity",65.10351708252843,28.207475670708487,23.722652205060808
+s0005_re,Myocardial infarction,84.0,1.0,no,no,"Coronary artery disease, Arterial Hypertension, Hyperuricemia",89.65096809595818,8.801840864126243,3.294623719720577
+s0223_re,Myocardial infarction,85.0,0.0,no,inferior,Diabetes mellitus,104.72640644350167,39.0306400842289,33.84939068875539
+s0019_re,Myocardial infarction,75.0,0.0,no,no,"Pericardial effusion, Diabetes mellitus, Renal insufficiency, Dialysis, Arterial hypertension, Hyperlipoproteinemia, Peripheral atherosclerosis",85.56176217584947,7.166313189079114,6.743270579860157
+s0307lre,Myocardial infarction,46.0,1.0,no,no,"Recurrent sustained ventricular tachycardia, Arterial hypertension, Hyperlipoproteinemia Type IIa, Coronary artery disease, Cardioverter-Defibrillator",79.16352511957443,12.72623960142728,4.828388274914657
+s0351lre,Myocardial infarction,54.0,1.0,yes,no,"Palpitation, Postop. Posthetic valve replacement in aortic position, WPW-Syndrome (left postero-lateral bypass tract confirmed by sucessful RF-ablation), Postop. ACVB (3x)",85.28628834146036,21.92675073830736,11.422038476688956
+s0333lre,,67.0,1.0,n,,,70.3615329878887,84.48594641951676,128.28832347253564
+s0341lre,,57.0,0.0,n,,,67.96615773973235,21.87109876618708,14.492724467814876
+s0201_re,Myocardial infarction,63.0,1.0,no,no,"Ventricular fibrillation, Arterial hypertension, Diabetes mellitus, Hyperlipoproteinemia Type IIb, Renal insufficiency",69.11032957307619,5.688577274365096,6.717071357299074
+s0007_re,,20.0,,n,,,106.47567870219284,86.0932776989469,111.04285277096923
+s0211_re,Dysrhythmia,81.0,1.0,yes,no,"Palpitation, Arterial hypertension",58.895515013190426,8.168998695222069,9.049072564949102
+s0335lre,Myocardial infarction,58.0,1.0,yes,no,"Hypercholesterinemia, Recurrent ventricular tachycardias",81.13899096028662,23.66825778287766,17.402231533273607
+s0202are,Myocardial infarction,53.0,1.0,no,no,"Dilated Cardiomyopathy secondary to coronary artery disease. Mitral regurgitation (grade 2), Tricuspid regurgitation (grade 2), Atrial fibrillation",90.18679635677942,84.40129869130699,116.10512477922757
+s0202bre,Myocardial infarction,53.0,1.0,no,no,"Dilated Cardiomyopathy secondary to coronary artery disease. Mitral regurgitation (grade 2), Tricuspid regurgitation (grade 2), Atrial fibrillation",92.17202855976916,73.93569396512935,79.73740384178916
+s0287lre,Healthy control,36.0,1.0,unknown,no,no,67.1511112650056,51.88196341177375,57.62067105027036
+s0206_re,Dysrhythmia,66.0,0.0,no,no,"Atrial Fibrillation, Prosthetic valve in mitral position, Hyperlipoproteinemia Type IIa",58.52157626445958,98.11795217839872,84.80195415538152
+s0004_re,Myocardial infarction,79.0,0.0,no,infero-postero-lateral,Diabetes mellitus,70.08861286063852,13.876691580262635,8.88015443881146
+s0391lre,Dysrhythmia,52.0,1.0,unknown,no,Atrial flutter,85.45280894193232,185.20536960579088,242.35869253867625
+s0170_re,,,,n,,,52.49205535326107,11.674171933057206,8.500474370064829
+s0301lre,Healthy control,37.0,1.0,unknown,no,no,77.78617582037893,39.34779171692756,26.742663816965035
+s0299lre,Healthy control,17.0,1.0,unknown,no,no,69.69159172777532,68.26139191847878,68.86855496230059
+s0338lre,Dysrhythmia,87.0,1.0,yes,no,"Atrial Fibrillation, Diabetes mellitus, Peripheral atherosclerosis, Chronic lymphatic leucemia",44.05168607254223,372.124671114605,338.8740251749485
+s0294lre,Myocardial infarction,64.0,1.0,no,antero-septo-lateral,Coronary artery disease,72.91029496666198,12.19174390885698,8.743942002273942
+s0295lre,Myocardial infarction,64.0,1.0,no,antero-septo-lateral,Coronary artery disease,70.41402973054414,14.269770869842793,9.819039353958535
+s0390lre,Myocardial hypertrophy,73.0,1.0,yes,no,"Arterial hypertension, Hyperlipoproteinemia, Obesity, Bladder cancer",88.100407309987,14.287881928503309,4.971174393470762
+s0222_re,Myocardial infarction,55.0,1.0,yes,inferior,"Dilated Cardiomyopathy secondary to coronary artery disease, Diabetes mellitus, Obesity",61.80228891186263,15.189535782931111,16.7300548965658
+s0193_re,,,,n,,,92.18380288030778,197.64634025080332,236.31554268453377
+s0034_re,Myocardial infarction,68.0,0.0,no,anterior,Arterial hypertension,84.7965302514198,6.817494357742584,4.336783636255365
+s0024are,,87.0,0.0,n,,,63.52142260559449,243.43937880344015,464.0190175506265
+s0024bre,,87.0,0.0,n,,,63.86712526757966,248.43458830388,468.2580716032791
+s0322lre,Healthy control,26.0,1.0,unknown,no,no,58.55088053239827,31.10798607603517,32.78649943886273
+s0323lre,Healthy control,26.0,1.0,unknown,no,no,58.45315100994677,49.72901999814023,35.2483397416879
+s0275lre,Healthy control,,1.0,unknown,no,no,60.0479005851498,36.63476332910416,35.00379246204135
+s0200_re,Cardiomyopathy,80.0,0.0,no,no,Hypertropic obstructive cardiomyopathy (intraventricular gradient 70mmHg),63.93440406645296,18.359375443262405,15.93255013631383
+s0032_re,Dysrhythmia,75.0,0.0,no,no,"Atrial fibrillation, Obesity",80.73012928352013,148.95225916448558,164.63087963870035
+s0033_re,Dysrhythmia,75.0,0.0,no,no,"Atrial fibrillation, Obesity",80.7511658367594,155.95208469619263,233.5678880611231
+s0328lre,Healthy control,54.0,0.0,unknown,no,no,57.04272014572211,55.50831532542244,46.55154915759477
+s0329lre,Healthy control,54.0,0.0,unknown,no,no,57.54912258024231,20.2307870202584,20.428284676272146
+s0274lre,Healthy control,,1.0,unknown,no,no,94.27426260245848,15.424772895257384,5.182156752101576
+s0364lre,Bundle branch block,64.0,0.0,unknown,no,Psoriasis,76.28103948513436,21.09638072498424,11.676483964694928
+s0304lre,Healthy control,50.0,1.0,unknown,no,no,67.49787141818159,22.56310049476817,14.936611469966152
+s0305lre,Healthy control,57.0,0.0,unknown,no,no,66.45046027385918,140.38841470764953,238.3217153345452
+s0300lre,Healthy control,26.0,1.0,unknown,no,no,76.86946563418277,34.13308098840452,19.55275798519447
+s0324lre,Healthy control,26.0,1.0,unknown,no,no,65.5237131358246,25.02164998040568,29.954400829131234
+s0325lre,Healthy control,26.0,1.0,unknown,no,no,68.56442208847244,32.55140331967125,38.19056663424833
+s0009_re,Bundle branch block,57.0,0.0,unknown,no,no,75.62923119221928,28.663854904987648,24.88056577313887
+s0188_re,,79.0,0.0,n,,,87.26882976047779,27.033173192028134,37.08302769996305
+s0366lre,Dysrhythmia,35.0,0.0,no,no,Congenital complete AV-block,75.22313402570576,277.7058397451181,469.1129538860014
+s0011_re,,85.0,0.0,n,,,75.63665746345816,11.452956507642796,14.696938456699067
+s0176_re,,77.0,0.0,n,,,79.12240449990195,9.505766241431289,5.742786069211937
+s0374lre,Healthy control,37.0,1.0,unknown,no,no,67.80078044959843,54.230844508674494,45.87125325299059
+s0475_re,Healthy control,37.0,1.0,unknown,no,no,72.05582164358661,34.99682697271539,28.90270224707542
+s0476_re,Healthy control,37.0,1.0,unknown,no,no,69.37757716149741,51.90969178013649,48.63314180424523
+s0477_re,Healthy control,37.0,1.0,unknown,no,no,67.11673585013797,30.49112126070131,32.695217887747326
+s0490_re,Healthy control,37.0,1.0,unknown,no,no,67.54061539907231,42.14561131392392,34.482969535263706
+s0545_re,Healthy control,37.0,1.0,unknown,no,no,80.40855103632985,29.504607357934997,22.322535641908534
+s0561_re,Healthy control,37.0,1.0,unknown,no,no,58.18023008437071,71.72135248826528,80.92589202474078
+s0204are,,,,n,,,96.90620297836004,191.85478486234396,289.4752119009238
+s0204bre,,,,n,,,100.86059985774428,113.63970847440171,181.7645297143947
+s0308lre,Healthy control,29.0,1.0,unknown,no,no,71.49392101309253,27.425732553574896,14.832396974191326
+s0175_re,Myocardial infarction,57.0,0.0,no,no,"Recurrent ventricular tachycardia, Dilated cardiomyopathy secondary to coronary artery disease, Hyperthyreosis",63.66172527669587,82.77671867859755,120.39048310000516
+s0363lre,Healthy control,81.0,0.0,no,no,no,86.34860642833509,14.33145022780071,15.13395471665796
+s0336lre,Healthy control,22.0,0.0,no,no,no,63.04495734066647,39.886111502079295,39.68383452602679
+s0293lre,,45.0,1.0,n,,,76.47695351365276,15.44838148226072,9.316949906249125
+s0207_re,Dysrhythmia,62.0,1.0,unknown,no,"Atrial fibrillation, Heart failure (NYHA 2-3), Venous thrombosis (eye)",70.22940375317933,188.43533630662867,249.03341714947183
+s0365lre,Valvular heart disease,51.0,1.0,no,no,"Post rheumatic fever, Aortic valve regurgitation (grade1-2), Mitral regurgitation (grade 2), poor LV function",85.53590310348518,3.925719063543823,4.540625942600567
+s0309lre,Myocardial infarction,61.0,1.0,yes,no,"Ventricular fibrillation, Coronary artery disease, Arterial Hypertension, Mitral regurgitation (grade 2), Aortic valve regurgitation (grade 1)",69.1611435262879,10.177058469124043,11.435773829388332
+s0040_re,,,,n,,,72.31455139988466,26.928318615062903,26.57450931728647
+s0041_re,,,,n,,,77.70667251949874,27.29827060880034,19.90602923739438
+s0340lre,Angina/Other Symptoms,60.0,1.0,yes,no,"COLD,Hyperlipoproteinemia",65.9307943297022,24.781822162169984,23.370266469142145
+s0048_re,,63.0,0.0,n,,,95.20380214120728,25.54165203546092,38.422495176565775
+s0008_re,Myocardial infarction,59.0,0.0,no,no,"WPW, paroxysmal atrial fibrillation",39.37387509134498,898.8454694026179,1272.3876982058002
+s0310lre,,67.0,1.0,n,,,71.91211360769732,18.77480325971385,24.210474155281
+s0337lre,Myocardial infarction,71.0,0.0,unknown,no,"Arterial Hypertension, Peripheral atherosclerosis, Hyperlipoproteinemia",81.05051254681544,9.737419778687586,2.009716656387422
+s0002_re,Angina/Other Symptoms,84.0,0.0,no,no,"Arterial hypertension, Recurrent pulmonary oedema, Diabetes mellitus, Hyperlipoproteinemia",60.567136134182086,24.4371474230151,34.83891502328967
+s0350lre,Myocardial infarction,51.0,1.0,no,antero-septal,Recurrent ventricular tachycardias,66.37451078161,18.5336022590972,9.07612252010736
+s0403lre,Myocardial infarction,51.0,1.0,no,antero-septal,Recurrent ventricular tachycardias,61.703674178576975,110.33242804208184,183.17072103226067
+s0402lre,Healthy control,,0.0,unknown,no,no,68.27383462830012,77.47342091402473,58.15156619698897
+s0415lre,Healthy control,,0.0,unknown,no,no,61.94342333995471,88.99191871965917,94.12313102050658
+s0404lre,Bundle branch block,,1.0,unknown,unknown,no,68.26939898575654,26.231280239143803,15.308290237645744
+s0405lre,,,1.0,n,,,53.379220930507714,17.21801382273809,7.05691150575094
+s0420_re,Cardiomyopathy,39.0,1.0,unknown,no,"Atrial fibrillation, Hypertropic cardiomyopathy",72.70391618432812,214.48322167701693,290.77267753349867
+s0423_re,Cardiomyopathy,39.0,1.0,unknown,no,"Atrial fibrillation, Hypertropic cardiomyopathy",79.87583528632636,23.605560499492544,8.95067872742222
+s0421_re,Bundle branch block,29.0,1.0,unknown,no,no,87.73365683525658,26.203813169009816,9.586840691847708
+s0422_re,Bundle branch block,29.0,1.0,unknown,no,no,63.6538748110547,46.09577331448424,40.65690593244892
+s0424_re,Bundle branch block,32.0,1.0,no,no,no,54.70732430714181,34.05617597716467,34.41839868768301
+s0425_re,Bundle branch block,67.0,1.0,unknown,no,unknown,47.85727249670697,127.30442628849327,131.3440037147793
+s0426_re,Myocardial infarction,63.0,1.0,no,no,"Bundle branch block, Asthma bronchiale",68.15692871074863,19.5874730108224,11.194681573067992
+s0427_re,Bundle branch block,32.0,1.0,no,no,Tinnitus,70.38893508026786,27.31749587129674,28.705525500234344
+s0428_re,Myocardial infarction,46.0,1.0,yes,no,"Bundle branch block, Coxarthrosis",69.60962747627102,26.684308337214272,17.733427546719344
+s0429_re,Bundle branch block,46.0,1.0,no,no,no,67.27575660494001,27.550946507612885,18.600268815261785
+s0430_re,Bundle branch block,46.0,1.0,no,no,no,65.92609732432584,30.620672451717137,21.112471056428404
+s0431_re,Bundle branch block,51.0,1.0,yes,no,"Epipharyngeal cancer, Cholesteatoma",59.99736929002445,52.30296801871348,44.65862920414332
+s0432_re,Myocardial hypertrophy,56.0,1.0,no,no,"Mesangio-proliferative Glomerulonephritis, Post Renal Tx, Arterial hypertension",68.74432042965472,8.849205742087547,5.660781257427675
+s0433_re,Myocardial infarction,68.0,1.0,yes,no,Periperal atherosclerosis,105.62247921080169,5.49049801626602,3.231128500626338
+s0434_re,Myocardial hypertrophy,66.0,1.0,no,no,"Coronary artery disease, Post PTCA and Stent (RIVA), Arterial hypertension, Diabetes mellitus, Calcified aortic valve (mild stenosis), Hyperlipoproteinemia",77.92463125947742,23.851907781053026,11.650969832559678
+s0435_re,Bundle branch block,58.0,1.0,no,no,Postop. Rectum adenoma,86.08065206962026,15.455981861434672,7.405085692795665
+s0436_re,Healthy control,35.0,1.0,unknown,no,no,98.13905550706228,19.320348488447124,9.70625263457456
+s0437_re,Cardiomyopathy,82.0,1.0,no,no,"Coronary artery disease, Postop. ACVB (3x), Dilated cardiomyopathy, Bundle branch block",92.97369169682972,18.29633515916761,10.104373343049916
+s0438_re,Myocardial hypertrophy,73.0,0.0,no,no,"Renal insufficiency, Arterial hypertension, Rheumatoid arthritis",68.93900729995268,26.878060202017405,46.0536771221429
+s0439_re,Bundle branch block,62.0,0.0,no,no,"Diabetes mellitus, Arterial hypertension",64.16657086584956,69.56018930759127,79.23216518561132
+s0440_re,Dysrhythmia,70.0,1.0,no,no,"Coronary artery disease, Arterial hypertension",59.451633006121,296.92388261492937,409.30711671002456
+s0441_re,Bundle branch block,66.0,1.0,no,no,Coronary artery disease (PTCA+Stent),23.985887043812948,5521.741490732447,7526.259064103494
+s0442_re,Bundle branch block,76.0,1.0,no,no,"Atrial fibrillation, Coronary artery disease (ACVB 2x), Postop. Nephrectomy",52.59590337881493,138.1953497501151,174.92911729735383
+s0443_re,Myocardial hypertrophy,63.0,1.0,no,no,"Arterial hypertension, minimal aortic regurgitation",60.29689779259004,124.76922551406489,215.78773704181413
+s0444_re,Cardiomyopathy,60.0,0.0,no,no,"Hypertrophic (obstructive) cardiomyopathy, Asthma bronchiale",77.3097617341077,63.0877503283012,47.54976617353543
+s0445_re,Myocardial infarction,56.0,1.0,no,antero-septal,Stent,70.6978194862894,19.294370829182853,12.692236097034169
+s0446_re,Myocardial infarction,56.0,1.0,no,antero-septal,Stent,70.64318496792399,25.60597149007762,5.611524626435629
+s0447_re,Valvular heart disease,38.0,0.0,no,no,"AV-reentry tachycardia, Prosthetic aortic valve replacement (post Endocarditis) actual gradient=64mmHg",74.428663627739,29.82107360409963,15.829139074365871
+s0449_re,Myocardial infarction,62.0,1.0,no,infero-lateral,"Prosthetic aortic valve, Arterial hypertension, Mitral regurgitation (grade 2)",59.43199237124214,24.40032184653901,13.555205263794049
+s0450_re,Myocardial hypertrophy,52.0,1.0,no,no,"Coronary artery disease, Arterial hypertension",82.04165786586493,21.582894447221005,6.713294495355202
+s0451_re,Bundle branch block,73.0,1.0,no,no,"Coronary artery disease, Diabetes mellitus, Arterial hypertension",59.78846103516244,97.23789360667932,152.85205964183845
+s0452_re,Healthy control,55.0,1.0,unknown,no,no,57.32866611644068,45.75299121978959,35.28092066304193
+s0453_re,Healthy control,55.0,1.0,unknown,no,no,60.48499410111996,69.3108690511629,35.45064032086958
+s0454_re,Myocardial infarction,68.0,1.0,no,infero-postero-lateral,no,58.59891124447389,64.77581683604316,54.643588270998784
+s0455_re,Myocardial infarction,57.0,1.0,no,infero-lateral,no,73.84115005395665,24.052289125716435,15.08824616758996
+s0456_re,Cardiomyopathy,70.0,0.0,no,no,"Bundle branch block, Dilated cardiomyopathy",91.65410421273404,14.862366155892076,6.06639142920861
+s0457_re,Healthy control,24.0,1.0,unknown,no,no,57.59700017618701,69.66381221174976,85.14365788404974
+s0458_re,Healthy control,24.0,1.0,unknown,no,no,58.43176824725107,86.36116753831688,98.77104483726804
+s0459_re,Healthy control,24.0,1.0,unknown,no,no,61.61676469942681,130.45205678124552,114.88523258742468
+s0482_re,Healthy control,24.0,1.0,unknown,no,no,64.44916120249917,84.11770860756565,86.41754488234471
+s0483_re,Healthy control,24.0,1.0,unknown,no,no,61.35203452287996,82.29362868602921,91.11412257895772
+s0460_re,Healthy control,34.0,1.0,unknown,no,no,53.8792477812295,69.51545144622543,68.51869322130068
+s0461_re,Healthy control,30.0,1.0,unknown,no,no,67.44022902668772,78.2235817369663,75.54812239223739
+s0462_re,Healthy control,25.0,0.0,unknown,no,no,62.21394044122725,51.77354536826698,54.76228933612374
+s0463_re,Healthy control,25.0,0.0,unknown,no,no,63.28663310807767,54.1449071265427,56.43623292794066
+s0464_re,Healthy control,25.0,0.0,unknown,no,no,61.53540664513571,62.94513506579701,62.52536675304916
+s0465_re,Healthy control,47.0,1.0,unknown,no,no,61.1577146214788,19.6412241459236,11.527864792174933
+s0466_re,Healthy control,29.0,1.0,unknown,no,no,78.41622479978909,64.60082686849015,36.83870685272007
+s0467_re,Healthy control,59.0,1.0,unknown,no,no,80.80857629835208,110.97702730575658,109.875515611157
+s0468_re,Healthy control,28.0,1.0,unknown,no,no,77.79105815533192,24.5746369921335,12.899055039615604
+s0469_re,Healthy control,33.0,1.0,unknown,no,no,58.5293338665068,75.39762361785891,58.1107581696691
+s0470_re,Healthy control,33.0,1.0,unknown,no,no,55.69819900297244,74.2804353058351,66.24710483547616
+s0471_re,Healthy control,28.0,0.0,unknown,no,no,72.19772995261755,41.800366731866674,23.619191289777444
+s0472_re,Healthy control,52.0,0.0,unknown,no,no,92.16346389287328,27.502838271943325,13.009295070900585
+s0473_re,Healthy control,44.0,1.0,unknown,no,no,74.66340360022815,13.461218495477103,7.763511373311526
+s0474_re,Healthy control,30.0,1.0,unknown,no,no,77.59494908372628,27.772770026491813,18.185140813456155
+s0480_re,Healthy control,30.0,1.0,unknown,no,no,61.87570320014603,124.5916598181721,144.38653356314143
+s0478_re,Healthy control,54.0,1.0,unknown,no,no,58.34837199161721,31.13263130969573,14.840674312007788
+s0479_re,Healthy control,48.0,0.0,unknown,no,no,81.04045073342547,60.806336503741214,18.883028094031957
+s0481_re,Healthy control,64.0,1.0,unknown,no,no,62.8303280926023,26.679062159745737,10.526003418557275
+s0484_re,Myocarditis,46.0,1.0,no,no,no,57.07334397786792,30.79403766973499,31.67975919821903
+s0485_re,Myocardial hypertrophy,53.0,1.0,no,no,Arterial hypertension,56.9617450535165,39.78183648547431,36.72137605618096
+s0486_re,Healthy control,40.0,1.0,unknown,no,no,77.46045544890607,32.822855251178666,26.28924082217925
+s0503_re,Healthy control,40.0,1.0,unknown,no,no,77.51867206987019,32.99906306463936,22.666666666666668
+s0506_re,Healthy control,40.0,1.0,unknown,no,no,76.70328658631755,31.55353561756004,21.642030483383685
+s0487_re,Healthy control,54.0,1.0,unknown,no,no,61.11399764727726,44.068754196354725,32.12722106459464
+s0488_re,Cardiomyopathy,62.0,1.0,no,no,"Atrial fibrillation, Dilated cardiomyopathy",53.26702971738175,329.6513837939041,453.5107712148005
+s0489_re,Cardiomyopathy,57.0,1.0,no,no,"Atrial fibrillation, Dilated cardiomyopathy",81.69990854263423,183.74501808063556,265.85754489428206
+s0491_re,Healthy control,69.0,1.0,unknown,no,no,65.55007093252833,28.43619373076956,20.745224536872847
+s0493_re,Cardiomyopathy,68.0,1.0,no,no,"Atrial fibrillation, Dilated cardiomyopathy, Chronic myocarditis",78.22115205393642,149.1391756672257,192.8382098117453
+s0494_re,Dysrhythmia,42.0,1.0,no,no,WPW-syndrome,55.90123404859804,57.07450624314908,44.735586810421154
+s0495_re,Myocardial infarction,58.0,0.0,unknown,inferior,unknown,58.623069924223245,34.16964797270688,39.3978591340675
+s0496_re,Healthy control,,1.0,unknown,no,no,61.32248748416392,60.61370195245889,25.915629159075877
+s0497_re,Myocardial infarction,51.0,1.0,unknown,no,unknown,63.18485863867852,28.569496478451597,16.635562373537933
+s0498_re,Cardiomyopathy,41.0,0.0,unknown,no,Hypertrophic obstructive cardiomyopathy,61.956924520030384,31.485397693102787,24.169653103583027
+s0499_re,Healthy control,37.0,1.0,unknown,no,no,76.4736402805207,21.755462129091423,12.49693295706324
+s0500_re,Healthy control,45.0,1.0,unknown,no,no,62.24474678148079,49.69513347217216,26.48816624116649
+s0501_re,Myocardial infarction,57.0,1.0,unknown,antero-lateral,unknown,61.14767787553641,13.482086880993846,7.550938131561311
+s0502_re,Healthy control,68.0,1.0,unknown,no,no,72.65081836311789,17.83572272296542,15.8987178970265
+s0504_re,Healthy control,67.0,0.0,unknown,no,no,118.46468991631116,195.99550708967143,347.1033350822565
+s0505_re,Myocardial infarction,55.0,1.0,unknown,infero-lateral,unknown,67.5072510603047,19.571605273170253,14.24408436488423
+s0508_re,Myocarditis,61.0,1.0,unknown,no,Bundle branch block,59.23688925628343,45.025905370526445,20.22033800324607
+s0507_re,Myocardial infarction,60.0,1.0,unknown,antero-lateral,unknown,69.13121740385034,32.66530934372509,48.28583704176132
+s0509_re,Myocarditis,41.0,1.0,unknown,no,Arterial hypertension,56.62423589815111,36.89379168272343,35.61939178914446
+s0510_re,Myocarditis,61.0,1.0,unknown,no,no,66.68892663503237,47.07699384546333,33.26472583282214
+s0511_re,Myocardial infarction,69.0,1.0,unknown,anterior,unknown,43.38459763122618,33.832459179279994,32.88929738308408
+s0512_re,Myocardial infarction,57.0,1.0,unknown,infero-lateral,unknown,55.01409382747564,15.88318510712284,13.527064777012104
+s0513_re,,48.0,1.0,n,,,78.9597814162091,24.86618197049778,5.527059534397489
+s0526_re,Healthy control,,1.0,unknown,no,no,76.32726680632341,22.225859854860627,13.539982489937517
+s0527_re,Healthy control,,1.0,unknown,no,no,49.29328236852548,69.16992964190919,96.28662723002262
+s0528_re,,62.0,1.0,n,,,86.89368525946203,19.55607611251304,11.63545104111708
+s0529_re,,62.0,1.0,n,,,89.63999534285963,9.04854937514582,5.207556439232954
+s0530_re,,62.0,1.0,n,,,89.0776311256998,17.872916028881505,18.548921801549543
+s0531_re,Healthy control,35.0,0.0,no,no,no,89.6536940138692,337.7595452600856,495.45776937552193
+s0532_re,Healthy control,35.0,0.0,no,no,no,46.6852904401199,76.1794369715066,98.82546497473476
+s0533_re,Healthy control,35.0,0.0,no,no,no,103.3732121829983,271.9656657718836,496.81594737034897
+s0534_re,Healthy control,35.0,0.0,no,no,no,46.01551260123789,64.3563378179509,83.77138201345639
+s0535_re,Myocardial infarction,67.0,1.0,unknown,no,Recurrent ventricular tachycardias,62.208152301282695,59.31274174071042,73.88332627622651
+s0537_re,,68.0,1.0,n,,,75.05044407862322,20.014709809112176,19.79165125651368
+s0539_re,Myocardial infarction,61.0,1.0,unknown,no,unknown,60.71643116800999,29.32517871117884,21.97362819687393
+s0542_re,Myocardial infarction,82.0,1.0,unknown,no,"Atrial fibrillation, Ventricular tachycardias",52.65410777431328,152.74426032256883,204.55410617472623
+s0543_re,Healthy control,48.0,1.0,unknown,no,no,76.95302905640166,32.580713913841535,14.308798756510088
+s0551_re,Healthy control,48.0,1.0,unknown,no,no,75.3558942921232,42.44818344057754,17.568657265733354
+s0552_re,Healthy control,48.0,1.0,unknown,no,no,71.22850285986914,31.188271962454937,18.337705106458348
+s0544_re,,,,n,,,35.57399383978373,1338.0075034786162,1603.7943550634332
+s0546_re,Dysrhythmia,56.0,1.0,unknown,no,Atrial fibrillation,79.20043441855805,209.6756773278262,303.94290495697413
+s0547_re,Myocardial infarction,78.0,0.0,unknown,infero-postero-lateral,unknown,93.75074183974628,18.312693726639974,27.389285733165316
+s0548_re,Myocardial infarction,78.0,0.0,unknown,infero-postero-lateral,unknown,90.43316874788376,19.93978601246982,29.947050651051253
+s0549_re,Cardiomyopathy,67.0,1.0,unknown,no,"Dilated Cardiomyopathy, Recurrent ventricular tachycardias",49.780372448356026,415.3918488967968,649.6664037567379
+s0550_re,Cardiomyopathy,69.0,0.0,unknown,no,Hypertrophic obstructive cardiomyopathy,76.84197622393538,6.3651163290511,3.742536432336821
+s0553_re,Myocardial infarction,60.0,1.0,unknown,antero-septal,unknown,62.3709248266847,271.94584184421456,457.1479267050834
+s0554_re,Myocardial infarction,69.0,1.0,unknown,inferior,unknown,84.95635569248348,46.1879644298098,69.67873239736063
+s0555_re,Myocardial infarction,66.0,1.0,unknown,antero-lateral,Arterial hypertension,110.58715590637014,94.15168418867609,109.93659672529056
+s0556_re,Myocardial infarction,66.0,1.0,unknown,antero-lateral,Arterial hypertension,111.21196169437322,69.67622386930682,81.35339224164991
+s0557_re,Myocardial infarction,75.0,1.0,unknown,antero-lateral,unknown,75.58267929219407,83.8367885483095,58.60795694655859
+s0558_re,Myocardial infarction,75.0,1.0,unknown,antero-lateral,unknown,71.90776717334005,25.52106566599442,32.0530367222915
+s0559_re,Myocardial infarction,61.0,0.0,unknown,inferior,unknown,74.56604903290739,30.737220942060407,41.18425496646573
