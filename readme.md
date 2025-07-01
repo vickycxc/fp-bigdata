@@ -1,101 +1,53 @@
-# Final Project Big Data
+# 🩺 Cardiologix
+### Klasifikasi Kondisi Jantung Cerdas dari Sinyal EKG
 
-![alt text](./img/soal.png)
+DEMO 📷
+"https://www.youtube.com/watch?v=vQV-2IFsTL8"
 
-Terdapat sebuah sistem Big Data dengan arsitektur seperti gambar di atas. Sistem tersebut berfungsi
-untuk menyimulasikan pemrosesan data stream menggunakan Kafka dan Apache Spark.
-Untuk kemudahan pemrosesan, Kafka Consumer tidak wajib menggunakan Spark Streaming.
-Alur yang diharapkan adalah sebagai berikut.
-1. Terdapat sebuah file dataset yang akan dibaca secara sekuensial oleh Kafka Producer.
-<strong>TIDAK DIPERBOLEHKAN MENGGUNAKAN DATASET YANG SUDAH DIGUNAKAN PADA
-TUGAS-TUGAS SEBELUMNYA.</strong>
-2. Kafka Producer akan mengirimkan data per baris ke Kafka Server seolah-olah sedang
-melakukan streaming. Proses ini dapat dilakukan dengan menambahkan jeda/sleep secara
-random agar data tidak dikirimkan secara langsung.
-3. Kafka consumer membaca data yang ada di dalam Kafka server dan akan menyimpan data
-yang diterima dalam bentuk batch. Batch dapat ditentukan berdasarkan:
-    
-    - Jumlah data yang diterima
+---
 
-    - Rentang waktu proses (window) Sehingga nanti akan didapatkan beberapa file dataset sesuai dengan batch yang dipilih.
+## 📌 Deskripsi Singkat
 
-4. Spark script bertugas untuk melakukan training model sesuai dengan data yang masuk.
-Diharapkan ada beberapa model yang dihasilkan sesuai dengan jumlah data yang masuk.
-Kalian dapat menentukan sendiri berapa jumlah data yang diproses untuk tiap model.
-Contoh:
+**Cardiologix** adalah sistem cerdas berbasis *big data* yang dirancang untuk menganalisis dan mengklasifikasikan sinyal Elektrokardiogram (EKG). [cite_start]Tujuan utamanya adalah membangun sebuah *pipeline* pemrosesan data untuk mendeteksi secara dini kondisi jantung seperti **Infark Miokard** dan **Kardiomiopati** dari sinyal EKG multi-lead[cite: 1, 12].
 
-    a. Terdapat 3 model dengan skema sebagai berikut:
-    1. Model 1: Menggunakan data selama 5 menit pertama atau 500.000 data pertama.
-    2. Model 2: Menggunakan data selama 5 menit kedua atau 500.000 data kedua.
-    3. Model 3: Menggunakan data selama 5 menit ketiga atau 500.000 data ketiga.
+[cite_start]Sistem ini memanfaatkan data klinis dari *PTB Diagnostic ECG Database (PTBDB)* [cite: 7][cite_start], menggabungkan data demografi pasien dengan data sinyal EKG format WFDB untuk menghasilkan diagnosis akurat melalui model *machine learning* atau *deep learning*[cite: 5, 12].
 
-    b. Terdapat 3 model dengan skema sebagai berikut:
+---
 
-    1. Model 1: 1/3 data pertama
-    2. Model 2: 1/3 data pertama + 1/3 data kedua
-    3. Model 3: 1/3 data pertama + 1/3 data kedua + 1/3 data terakhir (semua
-data)
+## ✨ Fitur Utama
 
-5. Model-model yang dihasilkan akan digunakan di dalam API. Buatlah endpoint sesuai dengan
-jumlah model yang ada.
-6. User akan melakukan request ke API. API akan memberikan respon sesuai dengan request
-user.
-Misal:
-    - Apabila user melakukan request rekomendasi, maka input yang diperlukan adalah rating dari user dan response yang diberikan adalah daftar rekomendasi.
-    - Apabila modelnya adalah kasus clustering, maka response yang diberikan adalah ada di cluster mana data input dari user tersebut.
+- [cite_start]**🩺 Klasifikasi Kondisi Jantung:** Secara otomatis mengklasifikasikan tiga kondisi utama: Infark Miokard, Kardiomiopati, dan Jantung Sehat[cite: 7, 12].
+- **📂 Unggah Data Pasien:** Mendukung input data pasien berupa usia, jenis kelamin, status merokok, serta file sinyal EKG (.dat) dan file konfigurasi (.xyz).
+- **📈 Visualisasi Sinyal EKG:** Menampilkan grafik sinyal EKG secara interaktif untuk dianalisis setelah data diproses.
+- [cite_start]**🚀 Pipeline Big Data:** Dibangun di atas Apache Spark untuk pemrosesan data sinyal EKG yang efisien dan terdistribusi[cite: 16].
+- [cite_start]**🧠 Prediksi Cerdas:** Menggunakan model *Machine Learning/Deep Learning* (seperti Random Forest, CNN, atau LSTM) untuk melakukan prediksi[cite: 14].
 
-# Deskripsi Aplikasi
+---
 
-# DUTCH ELECTRIC CONSUMPTION CLUSTERING SYSTEM
+## 🧠 Analisis 5V Big Data
 
-Sebuah aplikasi REST API yang berguna untuk membuat cluster dari konsumsi listrik di belanda. Aplikasi dibangun menggunakan algoritma K-MEANS pyspark yang di serve sebagai API mengguakan flask. Data yang didapat merupakan hasil dari proses streaming data melalui Kafka.
+| Aspek | Penjelasan |
+| :--- | :--- |
+| **Volume** | [cite_start]Dataset sebesar **1.7 GB** (PTB Diagnostic ECG Database)[cite: 5]. |
+| **Velocity** | [cite_start]Analisis data dilakukan secara *batch*, dengan potensi pengembangan untuk simulasi *real-time* menggunakan Apache Kafka & Spark Streaming[cite: 5, 18]. |
+| **Variety** | [cite_start]Data terstruktur (diagnosis, demografi) dan semi-terstruktur (sinyal EKG dalam format WFDB)[cite: 5]. |
+| **Veracity** | [cite_start]Menggunakan data klinis dengan diagnosis dari ahli, namun kualitas sinyal EKG memerlukan pra-pemrosesan untuk memastikan akurasi[cite: 5]. |
+| **Value** | [cite_start]Memberikan nilai berupa model klasifikasi penyakit jantung yang dapat menjadi alat bantu diagnosis dan identifikasi fitur EKG penting[cite: 5]. |
 
-## Aplikasi terdiri dari 2 bagian
+---
 
-> Kafka Server
-- producer.py : sebagai publisher yang berfungsi mengirimkan dataset kepada suatu topic pada kafka server
-- consumer.py : sebagai subscriber yang berfungsi menerima data hasil streaming dari suatu topic pada kafka server
-> Clustering System
-- app.py : sebagai api route controller dari flask
-- engine.py : sebagai clustering engine yang memanfaatkan K-Means Clustering pyspark
-- server.py : sebagai start point yang menghubungkan app.py dan engine.py serta menjalankannya diatas cherrypi sebagai web server
+## 🏗️ Arsitektur Proyek
+(Akan diperbarui dengan diagram arsitektur proyek)
 
-## Cara menggunakan : 
-- jalankan zookeper
-    > bin/zookeeper-server-start.sh config/zookeeper.properties
-- jalankan kafka server
-    > bin/kafka-server-start.sh config/server.properties     
-- jalankan producer.py untuk mengirim data
-    > python producer.py
-- jalankan consumer.py untuk menerima data
-    > python consumer.py
-- jalankan flask server sebagai API dengan python3
-    > python3 server.py
+---
 
-- akses API pada http://<ip_address>:9999/{api}
+## ⚙️ Teknologi yang Digunakan
 
-## Endpoint aplikasi
-- /predict/\<model_id> **[POST]** \{parameter int(annual_consumption)}
-
-contoh : 
-```
-    curl -d "annual_consumption=12093" -X POST http://localhost:9999/1
-```
-![Image description](./img/1.png)
-
-- /cluster/\<model> **[GET]**
-
-contoh :
-```
-    curl http://localhost:9999/1
-```
-![Image description](./img/2.png)
-
-### sources:
-
-- https://towardsdatascience.com/kafka-python-explained-in-10-lines-of-code-800e3e07dad1
-- https://towardsdatascience.com/getting-started-with-apache-kafka-in-python-604b3250aa05
-- https://stackoverflow.com/questions/46001807/dump-the-kafka-kafka-python-to-a-txt-file
-- https://spark.apache.org/docs/2.3.0/sql-programming-guide.html
-- https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_json.html
-
+| Kategori | Teknologi |
+| :--- | :--- |
+| **Penyimpanan & Distribusi** | [cite_start]HDFS (Hadoop) [cite: 15] |
+| **Pemrosesan Big Data** | [cite_start]Apache Spark (PySpark) [cite: 16] |
+| **Signal Processing & ML** | [cite_start]Python, wfdb, SciPy, NumPy, Pandas, Scikit-learn, TensorFlow/Keras [cite: 17] |
+| **Streaming (Opsional)** | [cite_start]Apache Kafka, Spark Streaming [cite: 18] |
+| **Visualisasi Data** | [cite_start]Matplotlib, Seaborn, Chart.js [cite: 19] |
+| **Antarmuka Pengguna (UI)** | HTML, CSS, JavaScript |
