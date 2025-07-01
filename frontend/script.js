@@ -12,8 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Upload File
     const fileInputDat = document.getElementById('ecg-file-dat');
     const fileInputXyz = document.getElementById('ecg-file-xyz');
+    const fileInputHea = document.getElementById('ecg-file-hea'); // Tambahkan ini
     const datFileStatus = document.getElementById('dat-file-status');
     const xyzFileStatus = document.getElementById('xyz-file-status');
+    const heaFileStatus = document.getElementById('hea-file-status'); // Tambahkan ini
     
     // Tombol & Hasil
     const processButton = document.getElementById('process-btn');
@@ -27,13 +29,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==================================================================
     // 2. FUNGSI BARU UNTUK KONDISI TAMPILAN
     // ==================================================================
-    // REVISI: Fungsi ini memeriksa apakah kedua file sudah diunggah.
+    // REVISI: Fungsi ini memeriksa apakah ketiga file sudah diunggah.
     const checkFilesAndShowNextStep = () => {
         const datFileSelected = fileInputDat.files.length > 0;
         const xyzFileSelected = fileInputXyz.files.length > 0;
+        const heaFileSelected = fileInputHea.files.length > 0; // Tambahkan ini
 
-        // Jika KEDUA file sudah terpilih...
-        if (datFileSelected && xyzFileSelected) {
+        // Jika KETIGA file sudah terpilih...
+        if (datFileSelected && xyzFileSelected && heaFileSelected) {
             // Tampilkan bagian info pasien dan tombol proses.
             patientInfoSection.classList.remove('hidden');
             processButton.classList.remove('hidden');
@@ -62,6 +65,15 @@ document.addEventListener('DOMContentLoaded', () => {
             xyzFileStatus.textContent = `✔️ ${fileInputXyz.files[0].name}`;
         } else {
             xyzFileStatus.textContent = 'Tidak ada file dipilih';
+        }
+        checkFilesAndShowNextStep(); // Panggil fungsi pengecekan
+    });
+
+    fileInputHea.addEventListener('change', () => {
+        if (fileInputHea.files.length > 0) {
+            heaFileStatus.textContent = `✔️ ${fileInputHea.files[0].name}`;
+        } else {
+            heaFileStatus.textContent = 'Tidak ada file dipilih';
         }
         checkFilesAndShowNextStep(); // Panggil fungsi pengecekan
     });
@@ -107,17 +119,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const uploadAndDiagnose = async () => {
         const ageValue = patientAgeInput.value;
         const selectedGenderEl = document.querySelector('input[name="gender"]:checked');
+        const selectedSmokerEl = document.querySelector('input[name="option"]:checked'); // Tambahkan ini
 
         // Validasi
-        if (!ageValue || !selectedGenderEl) {
-            statusMessageEl.textContent = 'Mohon isi Usia dan pilih Jenis Kelamin.';
+        if (!ageValue || !selectedGenderEl || !selectedSmokerEl) { // Tambahkan validasi perokok
+            statusMessageEl.textContent = 'Mohon isi Usia, Jenis Kelamin, dan status Perokok.';
             statusMessageEl.style.color = 'red';
             setTimeout(() => { statusMessageEl.textContent = ''; }, 3000);
             return;
         }
 
-        if (fileInputDat.files.length === 0 || fileInputXyz.files.length === 0) {
-            statusMessageEl.textContent = 'Silakan pilih file .dat dan .xyz terlebih dahulu.';
+        if (fileInputDat.files.length === 0 || fileInputXyz.files.length === 0 || fileInputHea.files.length === 0) { // Tambahkan validasi file .hea
+            statusMessageEl.textContent = 'Silakan pilih file .dat, .xyz, dan .hea terlebih dahulu.';
             statusMessageEl.style.color = 'red';
             setTimeout(() => { statusMessageEl.textContent = ''; }, 3000);
             return; 
@@ -127,8 +140,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const formData = new FormData();
         formData.append('ecg_dat_file', fileInputDat.files[0]);
         formData.append('ecg_xyz_file', fileInputXyz.files[0]);
+        formData.append('ecg_hea_file', fileInputHea.files[0]); // Tambahkan ini
         formData.append('age', ageValue);
         formData.append('gender', selectedGenderEl.value);
+        formData.append('smoker', selectedSmokerEl.value); // Tambahkan ini
 
         try {
             statusMessageEl.textContent = 'Sedang mengirim dan memproses data, mohon tunggu...';
