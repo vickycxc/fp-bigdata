@@ -6,7 +6,7 @@ import os
 TEST_DATA_PATH = r'C:\Users\HP\Documents\ptbdb\patient001' 
 HEA_FILE = 's0010_re.hea'
 DAT_FILE = 's0010_re.dat'
-# XYZ_FILE = 's0010_re.xyz' # Opsional
+XYZ_FILE = 's0010_re.xyz' # Opsional
 
 url = 'http://127.0.0.1:5000/predict'
 
@@ -21,7 +21,7 @@ form_data = {
 files = {
     'hea_file': (HEA_FILE, open(os.path.join(TEST_DATA_PATH, HEA_FILE), 'rb'), 'application/octet-stream'),
     'dat_file': (DAT_FILE, open(os.path.join(TEST_DATA_PATH, DAT_FILE), 'rb'), 'application/octet-stream'),
-    # 'xyz_file': (XYZ_FILE, open(os.path.join(TEST_DATA_PATH, XYZ_FILE), 'rb'), 'application/octet-stream')
+    'xyz_file': (XYZ_FILE, open(os.path.join(TEST_DATA_PATH, XYZ_FILE), 'rb'), 'application/octet-stream')
 }
 
 # Kirim request
