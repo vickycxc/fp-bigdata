@@ -2,7 +2,7 @@
 ### Klasifikasi Kondisi Jantung Cerdas dari Sinyal EKG
 
 DEMO 📷
-"https://www.youtube.com/watch?v=vQV-2IFsTL8"
+(link youtube)
 
 ---
 
