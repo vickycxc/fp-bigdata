@@ -107,47 +107,11 @@ def predict_ecg():
     # 6. Kirim Respons
     # Untuk mapping, kita bisa hardcode karena sudah final
     diagnosis_mapping = {
-    0: {
-        "name": "Angina/Other Symptoms",
-        "advice": "Terdeteksi gejala yang mirip dengan Angina (nyeri dada) atau keluhan jantung lainnya. Ini bisa menjadi tanda peringatan dari kondisi jantung yang mendasarinya. Segera konsultasikan dengan dokter untuk diagnosis yang akurat."
-    },
-    1: {
-        "name": "Bundle Branch Block",
-        "advice": "Terdeteksi adanya kelainan atau blok pada jalur kelistrikan jantung. Kondisi ini memerlukan evaluasi medis lebih lanjut untuk mengetahui penyebab dan tingkat keparahannya."
-    },
-    2: {
-        "name": "Cardiomyopathy",
-        "advice": "Terdapat indikasi adanya penyakit pada otot jantung (bisa berupa penebalan atau pelemahan). Disarankan untuk melakukan pemeriksaan lanjutan seperti ekokardiogram (USG jantung) dengan kardiolog."
-    },
-    3: {
-        "name": "Dysrhythmia",
-        "advice": "Terdeteksi irama jantung yang tidak normal atau tidak teratur (Aritmia). Sebaiknya segera konsultasi dengan dokter spesialis jantung (kardiolog) untuk pemeriksaan lebih mendalam."
-    },
-    4: {
-        "name": "Healthy Control",
-        "advice": "Tidak terdeteksi kelainan signifikan pada sinyal EKG Anda saat ini. Pertahankan pola hidup sehat dengan diet seimbang dan olahraga teratur."
-    },
-    5: {
-        "name": "Heart Failure",
-        "advice": "Terdeteksi indikasi Gagal Jantung, yaitu kondisi di mana jantung tidak memompa darah secara efisien. Sangat penting untuk segera menemui dokter untuk penanganan dan manajemen kondisi ini."
-    },
-    6: {
-        "name": "Myocardial Hypertrophy",
-        "advice": "Ditemukan adanya indikasi penebalan pada otot jantung (Hipertrofi). Kondisi ini seringkali terkait dengan tekanan darah tinggi dan memerlukan evaluasi oleh kardiolog."
-    },
-    7: {
-        "name": "Myocardial Infarction",
-        "advice": "Terdeteksi indikasi kuat Serangan Jantung (Infark Miokard). Ini adalah kondisi darurat medis. SEGERA HUBUNGI AMBULANS atau cari pertolongan medis darurat terdekat."
-    },
-    8: {
-        "name": "Myocarditis",
-        "advice": "Terdapat tanda-tanda peradangan pada otot jantung (Miokarditis). Kondisi ini serius dan memerlukan diagnosis serta penanganan medis secepatnya untuk mencegah komplikasi."
-    },
-    9: {
-        "name": "Valvular Heart Disease",
-        "advice": "Terindikasi adanya kelainan pada katup jantung. Disarankan untuk berkonsultasi dengan dokter untuk pemeriksaan lebih lanjut, seperti ekokardiogram, guna memastikan fungsi katup."
+        0: 'Angina/Other Symptoms', 1: 'Bundle branch block', 2: 'Cardiomyopathy', 
+        3: 'Dysrhythmia', 4: 'Heart failure', 5: 'Healthy control', 
+        6: 'Myocardial hypertrophy', 7: 'Myocardial infarction', 8: 'Myocarditis', 
+        9: 'Valvular heart disease'
     }
-}
     nama_diagnosis_prediksi = diagnosis_mapping.get(int(prediksi_id[0]), "ID Tidak Dikenal")
     probabilitas_tertinggi = np.max(prediksi_probabilitas) * 100
 
