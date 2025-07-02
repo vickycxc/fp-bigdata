@@ -2,7 +2,7 @@ import os
 import pandas as pd
 import numpy as np
 import joblib
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import wfdb
 import neurokit2 as nk
@@ -24,6 +24,7 @@ logging.basicConfig(level=logging.INFO)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 UPLOAD_FOLDER = os.path.join(BASE_DIR, 'uploads')
 ASSETS_FOLDER = os.path.join(BASE_DIR, '../train-model')
+FRONTEND_FOLDER = os.path.join(BASE_DIR, '../frontend') # Tambahkan path ke folder frontend
 MODEL_PATH = os.path.join(ASSETS_FOLDER, 'model_ekg_randomforest.joblib')
 DATA_PATH = os.path.join(ASSETS_FOLDER, 'dataset_final_untuk_ml_final.csv')
 
@@ -105,10 +106,13 @@ def extract_ecg_features(record_path):
             'HRV_SDNN': hrv_features.get('HRV_SDNN', pd.Series([np.nan])).iloc[0],
             'HRV_RMSSD': hrv_features.get('HRV_RMSSD', pd.Series([np.nan])).iloc[0]
         }
-        return fitur
+        # REVISI: Kembalikan juga sinyal yang sudah difilter untuk visualisasi
+        # Kita akan mengembalikan lead kedua (indeks 1) yang digunakan untuk pemrosesan
+        return fitur, filtered_signal[:, 1]
     except Exception as e:
         app.logger.error(f"Error saat ekstraksi fitur: {e}")
-        return None
+        # REVISI: Kembalikan None untuk kedua nilai jika terjadi error
+        return None, None
 
 # ==============================================================================
 # Endpoint Utama untuk Prediksi
@@ -142,7 +146,8 @@ def predict_ecg():
     except (KeyError, ValueError) as e:
         return jsonify({"error": f"Input error: Data form tidak valid atau hilang: {e}"}), 400
 
-    signal_features = extract_ecg_features(record_path_for_wfdb)
+    # REVISI: Tangkap sinyal EKG untuk divisualisasikan
+    signal_features, ecg_signal_for_viz = extract_ecg_features(record_path_for_wfdb)
     if signal_features is None:
         shutil.rmtree(temp_upload_dir)
         return jsonify({"error": "Processing error: Gagal mengekstrak fitur dari sinyal EKG."}), 500
@@ -187,14 +192,37 @@ def predict_ecg():
 
     shutil.rmtree(temp_upload_dir)
 
+    # REVISI: Tambahkan data visualisasi ke dalam respons
+    viz_data = []
+    if ecg_signal_for_viz is not None:
+        # Untuk performa, kurangi sampel data menjadi maksimal 1000 titik
+        if len(ecg_signal_for_viz) > 1000:
+            indices = np.linspace(0, len(ecg_signal_for_viz) - 1, 1000, dtype=int)
+            viz_data = ecg_signal_for_viz[indices].tolist()
+        else:
+            viz_data = ecg_signal_for_viz.tolist()
+
     respons = {
         "diagnosis": nama_diagnosis_prediksi,
         "advice": advice_prediksi,
-        "confidence": round(float(probabilitas_tertinggi), 2)
+        "confidence": round(float(probabilitas_tertinggi), 2),
+        "visualization_data": viz_data # Tambahkan data sinyal di sini
     }
     
     print("🚀 ~ respons:", respons)
     return jsonify(respons)
+
+# ==============================================================================
+# Rute untuk Menyajikan Frontend (HTML, CSS, JS)
+# ==============================================================================
+@app.route('/')
+def serve_index():
+    return send_from_directory(FRONTEND_FOLDER, 'index.html')
+
+@app.route('/<path:filename>')
+def serve_static(filename):
+    return send_from_directory(FRONTEND_FOLDER, filename)
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
