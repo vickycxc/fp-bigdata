@@ -59,3 +59,5 @@ Berikut adalah daftar teknologi yang digunakan dalam implementasi saat ini serta
 | **Big Data & Distribusi (Scope)** | Apache Spark, HDFS (Hadoop), Apache Kafka |
 | **Antarmuka Pengguna (UI)** | HTML, CSS, JavaScript, Chart.js |
 | **Bahasa Utama** | Python |
+
+VIDEO DEMONSTRASI: https://youtu.be/SQ9wd8vvA6c?si=AwAWvWJz3tDJQNlG
